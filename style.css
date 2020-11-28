@@ -1,0 +1,11 @@
+html,body{
+	width:100%;
+	height:100%
+}
+
+body{
+  /* 页面背景图 */
+  font-family: sans-serif;
+  background:url('https://s3.ax1x.com/2020/11/28/DyguOU.png') no-repeat;
+  background-size: 100%;
+}
