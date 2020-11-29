@@ -60,6 +60,26 @@ body {
     z-index: 10;
 }
 
+.footer-bottom-top-text {
+    position: absolute;
+    color: #fff;
+    animation: bottom-top-text 1s infinite alternate;
+    font-size: 55px;
+    width: 55px;
+    left: 47%;
+    bottom: 33%;
+    z-index: 10;
+}
+
+@keyframes bottom-top-text {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .footer-bottom-right {
     position: absolute;
     width: 100%;
