@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/animation.css">
+
 </head>
 
 <body>
@@ -26,7 +27,7 @@
         <div class="moon_box">
             <div class="footer-bottom-top-text">向上滑动</div>
             <img src="https://s3.ax1x.com/2020/11/28/D6tIdf.png" class="footer-bottom-top"></img>
-            <img src="https://s3.ax1x.com/2020/11/28/D6YNut.png" alt="月球" class="footer-bottom-middle" id="footer-bottom-middle"></img>
+            <img src="https://s3.ax1x.com/2020/11/28/D6YNut.png" style="box-shadow: none;" alt="月球" class="footer-bottom-middle" id="footer-bottom-middle"></img>
         </div>
         <img src="https://s3.ax1x.com/2020/11/28/D6lo3q.png" class="footer-bottom-right"></img>
     </div>
@@ -37,33 +38,8 @@
         <div class="moving-2"></div>
         <div class="moving-3"></div>
     </div>
-
-    <script>
-        function load() {
-
-            document.addEventListener('touchstart', touch, false);
-            document.addEventListener('touchmove', touch, false);
-            document.addEventListener('touchend', touch, false);
-
-            function touch(event) {
-                var event = event || window.event;
-                var oInp = document.getElementById("footer-bottom-middle");
-                switch (event.type) {
-                    case "touchstart":
-                        console.log("Touch started (" + event.touches[0].clientX + "," + event.touches[0].clientY + ")");
-                        break;
-                    case "touchend":
-                        console.log("<br>Touch end (" + event.changedTouches[0].clientX + "," + event.changedTouches[0].clientY + ")");
-                        break;
-                    case "touchmove":
-                        console.log("<br>Touch moved (" + event.touches[0].clientX + "," + event.touches[0].clientY + ")");
-                        break;
-                }
-            }
-        }
-        window.addEventListener('load', load, false);
-    </script>
-
+    <script src="./js/moveMoon.js"></script>
 </body>
+
 
 </html>
