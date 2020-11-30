@@ -26,7 +26,8 @@
         <div class="moon_box">
             <div class="footer-bottom-top-text">向上滑动</div>
             <img src="https://s3.ax1x.com/2020/11/28/D6tIdf.png" class="footer-bottom-top"></img>
-            <img src="https://s3.ax1x.com/2020/11/28/D6YNut.png" alt="月球" class="footer-bottom-middle" id="footer-bottom-middle"></img>
+            <img src="https://s3.ax1x.com/2020/11/28/D6YNut.png" alt="月球" class="footer-bottom-middle"
+                id="footer-bottom-middle"></img>
         </div>
         <img src="https://s3.ax1x.com/2020/11/28/D6lo3q.png" class="footer-bottom-right"></img>
     </div>
@@ -39,10 +40,12 @@
     </div>
 
     <script>
+        var moon = document.getElementById("footer-bottom-middle");
         function load() {
-            document.addEventListener('touchstart', touch, false);
-            document.addEventListener('touchmove', touch, false);
-            document.addEventListener('touchend', touch, false);
+            console.log(moon);
+            moon.addEventListener('touchstart', touch, false);
+            moon.addEventListener('touchmove', touch, false);
+            moon.addEventListener('touchend', touch, false);
 
             function touch(event) {
                 var event = event || window.event;
