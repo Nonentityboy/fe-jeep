@@ -34,6 +34,7 @@ body {
     position: absolute;
     bottom: 0;
     border-bottom: 0px;
+    pointer-events: none;
 }
 
 .container .header-bottom {
@@ -54,17 +55,20 @@ body {
     width: 50%;
     left: 25%;
     bottom: 1%;
-    /* z-index: 10; */
+    box-shadow: none !important;
+    z-index: 0;
 }
 
 .bottom-text {
     position: absolute;
+    animation: bottom-top-text 1s infinite alternate;
     left: 47%;
     top: 33%;
 }
 
 .hands {
     position: absolute;
+    animation: bottom-top-text 1s infinite alternate;
     left: 56%;
     top: 59%;
 }
@@ -88,15 +92,7 @@ body {
     top: 0;
     left: 0;
     z-index: 2;
-}
-
-.footer-bottom-top {
-    position: absolute;
-    display: block;
-    width: 20%;
-    left: 40%;
-    bottom: 30%;
-    /* z-index: 10; */
+    pointer-events: none;
 }
 
 @keyframes bottom-top-text {
