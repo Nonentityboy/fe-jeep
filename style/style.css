@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
 }
@@ -103,6 +104,42 @@ body {
     pointer-events: none;
 }
 
+.starGroup1 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    /* animation: bottom-top-text 1s infinite alternate; */
+}
+
+.starGroup2 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    /* animation: bottom-top-text 1s infinite alternate; */
+}
+
+.starGroup3 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    /* animation: bottom-top-text 1s infinite alternate; */
+}
+
 @keyframes bottom-top-text {
     0% {
         opacity: 0;
@@ -120,7 +157,12 @@ body {
     /* z-index: 11; */
 }
 
-/* 天灯样式 */
+
+/* 孔明灯样式 */
+
+.km-light {
+    opacity: 0;
+}
 
 .km-light .line {
     position: absolute;
@@ -140,7 +182,13 @@ body {
     z-index: 10;
 }
 
-/* 天灯动画 */
+
+/* .starfield {
+    display: none;
+} */
+
+
+/* 天灯动画
 
 @keyframes line {
     0% {
@@ -153,4 +201,4 @@ body {
 
 .footer .km-light .line {
     animation-duration: 5s;
-}
+} */

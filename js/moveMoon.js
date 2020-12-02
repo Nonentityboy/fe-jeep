@@ -42,6 +42,9 @@ div.addEventListener('touchend', function(e) {
         middleTextDiv.style.opacity = 0;
         middleTextDiv.style.transition = "ease 2s";
 
+        // 控制第一幕第二组 孔明灯出现
+        moveStartGroup()
+
         // 控制月亮移动
         moonDiv.style.top = 0;
         moonDiv.style.opacity = 0;
@@ -69,3 +72,31 @@ div.addEventListener('touchmove', function(e) {
     // 阻止屏幕滚动的默认行为 
     e.preventDefault();
 });
+
+function moveStartGroup() {
+    // 获取孔明灯和孔明灯手势
+    const kmLightDiv = document.getElementById('km-light');
+
+    // const  starfieldDiv = document.getElementById('starfield');
+    // 第一幕第二组的三组星星乐曲特效效果
+    const starGroup = [
+        '',
+        document.getElementById('starGroup1'),
+        document.getElementById('starGroup2'),
+        document.getElementById('starGroup3')
+    ]
+
+    for (let i = 1; i < 7; i++) {
+        setTimeout(() => {
+            console.log(`${Math.ceil(i/2)}`)
+            starGroup[`${Math.ceil(i/2)}`].style.opacity = i % 2;
+            starGroup[`${Math.ceil(i/2)}`].style.transition = "ease 1s";
+        }, i * 1000);
+    }
+
+    // 控制孔明灯
+    setTimeout(() => {
+        kmLightDiv.style.opacity = 1;
+        kmLightDiv.style.transition = "ease 2s";
+    }, 7000);
+}
