@@ -76,6 +76,8 @@ div.addEventListener('touchmove', function(e) {
 function moveStartGroup() {
     // 获取孔明灯和孔明灯手势
     const kmLightDiv = document.getElementById('km-light');
+    const headerTextGroupTwoDiv = document.getElementById('header-bottom-text-group-two');
+    const headerTextDiv = document.getElementById('header-bottom-text');
 
     // const  starfieldDiv = document.getElementById('starfield');
     // 第一幕第二组的三组星星乐曲特效效果
@@ -88,14 +90,15 @@ function moveStartGroup() {
 
     for (let i = 1; i < 7; i++) {
         setTimeout(() => {
-            console.log(`${Math.ceil(i/2)}`)
             starGroup[`${Math.ceil(i/2)}`].style.opacity = i % 2;
             starGroup[`${Math.ceil(i/2)}`].style.transition = "ease 1s";
         }, i * 1000);
     }
 
-    // 控制孔明灯
+    // 控制孔明灯 及第一幕第二组
     setTimeout(() => {
+        headerTextDiv.style.display = 'none';
+        headerTextGroupTwoDiv.style.display = 'block';
         kmLightDiv.style.opacity = 1;
         kmLightDiv.style.transition = "ease 2s";
     }, 7000);

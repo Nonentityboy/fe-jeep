@@ -45,6 +45,15 @@ body {
     max-height: 100%;
 }
 
+.container .header-bottom-text-group-two {
+    margin-top: 140px;
+    width: auto;
+    height: auto;
+    max-width: 74%;
+    max-height: 100%;
+    display: none;
+}
+
 .footer {
     width: 100%;
     bottom: 0;
@@ -74,6 +83,8 @@ body {
     left: 47%;
     top: 33%;
 }
+
+.music-text-detail {}
 
 .hands {
     position: absolute;
