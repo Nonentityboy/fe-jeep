@@ -122,11 +122,35 @@ body {
 
 /* 天灯样式 */
 
-.km-light .line{
+.km-light .line {
     position: absolute;
-    right: 64px;
-    bottom: 267px;
+    right: 164px;
+    bottom: 520px;
     z-index: 10;
-    width: 20%;
+    width: 12%;
     height: auto;
+}
+
+.km-light .cut_hands {
+    position: absolute;
+    right: 5%;
+    bottom: 28%;
+    height: 10%;
+    width: auto;
+    z-index: 10;
+}
+
+/* 天灯动画 */
+
+@keyframes line {
+    0% {
+        bottom: 520px;
+    }
+    100% {
+        bottom: 800px;
+    }
+}
+
+.footer .km-light .line {
+    animation-duration: 5s;
 }
