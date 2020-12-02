@@ -26,6 +26,9 @@ div.addEventListener('touchend', function(e) {
     const headerTextDiv = document.getElementById('header-bottom-text');
     const middleTextDiv = document.getElementById('middle-text-tips');
 
+    // 控制那一块
+    const middleTextTipsDiv = document.getElementById('middle-text-tips')
+
     const maxTop = body.offsetHeight - moonDiv.offsetHeight;
     console.log(maxTop, lastTop)
     if (lastTop <= maxTop && lastTop >= maxTop / 2) {
@@ -78,8 +81,9 @@ function moveStartGroup() {
     const kmLightDiv = document.getElementById('km-light');
     const headerTextGroupTwoDiv = document.getElementById('header-bottom-text-group-two');
     const headerTextDiv = document.getElementById('header-bottom-text');
+    const musicTestDetailDiv = document.getElementById('music-text-detail');
 
-    // const  starfieldDiv = document.getElementById('starfield');
+    // const starfieldDiv = document.getElementById('starfield');
     // 第一幕第二组的三组星星乐曲特效效果
     const starGroup = [
         '',
@@ -101,5 +105,6 @@ function moveStartGroup() {
         headerTextGroupTwoDiv.style.display = 'block';
         kmLightDiv.style.opacity = 1;
         kmLightDiv.style.transition = "ease 2s";
+        musicTestDetailDiv.style.display = 'block';
     }, 7000);
 }
