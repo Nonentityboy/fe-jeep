@@ -9,7 +9,7 @@ var y = 0;
 var tint;
 let lastTop;
 // 手指触摸 
-div.addEventListener('touchstart', function(e) {
+div.addEventListener('touchstart', function (e) {
     clearInterval(tint);
     // 获取手指初始坐标 
     startY = e.targetTouches[0].pageY;
@@ -18,16 +18,16 @@ div.addEventListener('touchstart', function(e) {
     this.style.transition = "none";
 });
 // 手指离开 
-div.addEventListener('touchend', function(e) {
+div.addEventListener('touchend', function (e) {
     const body = document.querySelector('body');
     const div = document.getElementById('footer-bottom-middle');
     const maxTop = body.offsetHeight - div.offsetHeight;
     console.log(maxTop, lastTop)
     if (lastTop <= maxTop && lastTop >= maxTop / 2) {
         tint = setInterval(() => {
-                div.style.top = maxTop + 'px';
-                clearInterval(tint);
-            },
+            div.style.top = maxTop + 'px';
+            clearInterval(tint);
+        },
             200);
         this.style.transition = "ease 2s";
     } else {
@@ -38,7 +38,7 @@ div.addEventListener('touchend', function(e) {
     this.style.boxShadow = '';
 });
 // 手指按住移动 
-div.addEventListener('touchmove', function(e) {
+div.addEventListener('touchmove', function (e) {
     const body = document.querySelector('body');
     const div = document.getElementById('footer-bottom-middle');
 
