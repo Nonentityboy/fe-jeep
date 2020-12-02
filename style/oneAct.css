@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
     width: 100%;
     height: 100%;
 }
@@ -84,7 +83,74 @@ body {
     top: 33%;
 }
 
-.music-text-detail {}
+.music-text-detail {
+    z-index: 15;
+}
+
+/* .music-text-detail .box_music {
+    width: 50%;
+    height: auto;
+    z-index: 15;
+} */
+
+.music-text-detail .box_music .zhuangtai {
+    width: 35%;
+    height: auto;
+    position: absolute;
+    left: 6%;
+    top: 22%;
+}
+
+.music-text-detail .box_music .size {
+    width: 35%;
+    height: auto;
+    position: absolute;
+}
+
+.music-text-detail .box_music .size_big {
+    width: 40%;
+    height: auto;
+    position: absolute;
+}
+
+.music-text-detail .box_music .zhuangtai {
+    left: 6%;
+    top: 22%;
+}
+
+.music-text-detail .box_music .guangling {
+    left: 53%;
+    top: 17%;
+}
+
+.music-text-detail .box_music .meihua {
+    left: 2%;
+    top: 48%;
+}
+
+.music-text-detail .box_music .shenren {
+    left: 30%;
+    top: 37%;
+}
+
+.music-text-detail .box_music .nichang {
+    left: 64%;
+    top: 36%;
+}
+
+.music-text-detail .box_music .yueer {
+    left: 13%;
+    top: 60%;
+    height: 13%;
+    width: auto;
+}
+
+.music-text-detail .box_music .xiaoxiang {
+    left: 35%;
+    top: 60%;
+    height: 21%;
+    width: auto;
+}
 
 .hands {
     position: absolute;
@@ -168,7 +234,6 @@ body {
     /* z-index: 11; */
 }
 
-
 /* 孔明灯样式 */
 
 .km-light {
@@ -193,11 +258,9 @@ body {
     z-index: 10;
 }
 
-
 /* .starfield {
     display: none;
 } */
-
 
 /* 天灯动画
 
