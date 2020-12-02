@@ -68,7 +68,7 @@ body {
     z-index: 0;
 }
 
-.bottom-text {
+.middle-text-tips {
     position: absolute;
     animation: bottom-top-text 1s infinite alternate;
     left: 47%;

@@ -19,23 +19,35 @@ div.addEventListener('touchstart', function(e) {
 });
 // 手指离开 
 div.addEventListener('touchend', function(e) {
+    // 获取月亮的id
     const body = document.querySelector('body');
-    const div = document.getElementById('footer-bottom-middle');
-    const maxTop = body.offsetHeight - div.offsetHeight;
+    const moonDiv = document.getElementById('footer-bottom-middle');
+
+    const headerTextDiv = document.getElementById('header-bottom-text');
+    const middleTextDiv = document.getElementById('middle-text-tips');
+
+    const maxTop = body.offsetHeight - moonDiv.offsetHeight;
     console.log(maxTop, lastTop)
     if (lastTop <= maxTop && lastTop >= maxTop / 2) {
         tint = setInterval(() => {
-                div.style.top = maxTop + 'px';
+                moonDiv.style.top = maxTop + 'px';
                 clearInterval(tint);
             },
             200);
-        this.style.transition = "ease 2s";
+        moonDiv.style.transition = "ease 2s";
     } else {
-        div.style.top = 0;
-        this.style.opacity = 0;
-        this.style.transition = "ease 2s";
+        // 控制第一幕第一组 字体消失。
+        headerTextDiv.style.opacity = 0;
+        headerTextDiv.style.transition = "ease 2s";
+        middleTextDiv.style.opacity = 0;
+        middleTextDiv.style.transition = "ease 2s";
+
+        // 控制月亮移动
+        moonDiv.style.top = 0;
+        moonDiv.style.opacity = 0;
+        moonDiv.style.transition = "ease 2s";
     }
-    this.style.boxShadow = '';
+    moonDiv.style.boxShadow = '';
 });
 // 手指按住移动 
 div.addEventListener('touchmove', function(e) {
