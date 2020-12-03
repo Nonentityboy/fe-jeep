@@ -2,10 +2,16 @@ const cutHandsDiv = document.getElementById('cut-hands')
 
 const maxLeft = cutHandsDiv.offsetLeft - body.offsetLeft;
 
+var lightline = document.querySelector(".line");
+
+var lightlinenone = document.querySelector(".noneline");
+
+lightlinenone.style.display = 'none';
+
 let startX;
 let x;
 
-cutHandsDiv.addEventListener('touchstart', function(e) {
+cutHandsDiv.addEventListener('touchstart', function (e) {
     // 获取手指初始坐标 
     startX = e.targetTouches[0].pageX;
     x = this.offsetLeft;
@@ -14,7 +20,7 @@ cutHandsDiv.addEventListener('touchstart', function(e) {
 
 
 // 手指按住移动 
-cutHandsDiv.addEventListener('touchmove', function(e) {
+cutHandsDiv.addEventListener('touchmove', function (e) {
     // 计算手指的移动距离：手指移动之后的坐标减去手指初始的坐标 
     let moveX = e.targetTouches[0].pageX - startX;
 
@@ -29,3 +35,10 @@ cutHandsDiv.addEventListener('touchmove', function(e) {
     // 阻止屏幕滚动的默认行为 
     e.preventDefault();
 });
+// 手指移动结束
+cutHandsDiv.addEventListener('touchend', function () {
+    console.log("手指离开！")
+    lightline.style.display = 'none';
+    lightlinenone.style.display = 'block';
+})
+
