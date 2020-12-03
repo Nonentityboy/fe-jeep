@@ -12,14 +12,18 @@ shenren.addEventListener('touchstart', function() {
     const btn = document.getElementById('shenrenClick');
     shenren.style.opacity = 0;
     btn.style.opacity = 1;
+
+    //audio.play();// 这个就是播放  
     var audio = document.getElementById('shenrenchang');
-    audio.play(); //audio.play();// 这个就是播放  
+    audio.play();
 })
 
 shenren.addEventListener('touchend', function() {
     const btn = document.getElementById('shenrenClick');
     shenren.style.opacity = 1;
     btn.style.opacity = 0;
+
+    //audio.pause();// 这个就是暂停
     var audio = document.getElementById('shenrenchang');
     audio.pause();
 })
