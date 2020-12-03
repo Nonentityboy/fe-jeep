@@ -298,6 +298,7 @@ body {
 
 /* 点击版 */
 
-.footer .box_music .btn {
+.footer .box_music .btn  {
     z-index: -1;
+    opacity: 0;
 }
