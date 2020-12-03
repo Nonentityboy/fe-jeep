@@ -8,12 +8,24 @@ var startY = 0;
 var y = 0;
 var tint;
 let lastTop;
+
+
+const headerTextDiv = document.getElementById('header-bottom-text');
+const middleTextDiv = document.getElementById('middle-text-tips');
+const hands = document.getElementById('hands');
+
+const maxTop1 = headerTextDiv.offsetTop;
+const maxTop2 = middleTextDiv.offsetTop;
+const maxTop3 = hands.offsetTop;
+
 // 手指触摸 
 div.addEventListener('touchstart', function(e) {
     clearInterval(tint);
     // 获取手指初始坐标 
     startY = e.targetTouches[0].pageY;
     y = this.offsetTop;
+    this.style.boxShadow = '0 0 15px rgba(0, 0, 0, .6)';
+    this.style.transition = "none";
 });
 // 手指离开 
 div.addEventListener('touchend', function(e) {
@@ -21,35 +33,36 @@ div.addEventListener('touchend', function(e) {
     const body = document.querySelector('body');
     const moonDiv = document.getElementById('footer-bottom-middle');
 
-    const headerTextDiv = document.getElementById('header-bottom-text');
-    const middleTextDiv = document.getElementById('middle-text-tips');
-
-    // 控制那一块
-    const middleTextTipsDiv = document.getElementById('middle-text-tips')
-
-    const maxTop = body.offsetHeight - middleTextTipsDiv.offsetHeight;
+    const maxTop = body.offsetHeight - moonDiv.offsetHeight;
     console.log(maxTop, lastTop)
     if (lastTop <= maxTop && lastTop >= maxTop / 2) {
         tint = setInterval(() => {
-                middleTextTipsDiv.style.top = maxTop + 'px';
+                // headerTextDiv.style.top = maxTop + 'px';
+                moonDiv.style.top = maxTop + 'px';
+                headerTextDiv.style.top = maxTop1 + 'px';
+                middleTextDiv.style.top = maxTop2 + 'px';
+                hands.style.top = maxTop3 + 'px';
                 clearInterval(tint);
             },
             200);
-        middleTextTipsDiv.style.transition = "ease 2s";
+        moonDiv.style.transition = "ease 2s";
+
+
+        headerTextDiv.style.transition = "ease 2s";
+        middleTextDiv.style.transition = "ease 2s";
+        hands.style.transition = "ease 2s";
     } else {
-        // // 控制第一幕第一组 字体消失。
-        // headerTextDiv.style.opacity = 0;
-        // headerTextDiv.style.transition = "ease 2s";
-        // middleTextDiv.style.opacity = 0;
-        // middleTextDiv.style.transition = "ease 2s";
+        // 控制第一幕第二组 孔明灯出现
+        moveStartGroup()
 
-        // // // 控制第一幕第二组 孔明灯出现
-        // // moveStartGroup()
-
-        // // 控制月亮移动
-        // moonDiv.style.top = 0;
-        // moonDiv.style.opacity = 0;
-        // moonDiv.style.transition = "ease 2s";
+        // 控制月亮移动
+        moonDiv.style.top = 0;
+        moonDiv.style.opacity = 0;
+        moonDiv.style.transition = "ease 2s";
+        middleTextDiv.style.display = 'none';
+        middleTextDiv.style.transition = "ease 2s";
+        hands.style.display = 'none';
+        hands.style.transition = "ease 2s";
     }
     moonDiv.style.boxShadow = '';
 });
@@ -58,20 +71,20 @@ div.addEventListener('touchmove', function(e) {
     const body = document.querySelector('body');
     const div = document.getElementById('footer-bottom-middle');
 
-    // 控制那一块
-    const middleTextTipsDiv = document.getElementById('middle-text-tips')
-
     const maxTop = body.offsetHeight - div.offsetHeight;
     // 计算手指的移动距离：手指移动之后的坐标减去手指初始的坐标 
     let moveY = e.targetTouches[0].pageY - startY;
     lastTop = y + moveY;
 
-    console.log(lastTop);
-    // //防止超出父元素范围
-    // if (lastTop <= 0) lastTop = 0;
-    // if (lastTop >= maxTop) lastTop = maxTop;
+    //防止超出父元素范围
+    if (lastTop <= 0) lastTop = 0;
+    if (lastTop >= maxTop) lastTop = maxTop;
     // 移动盒子 盒子原来的位置 + 手指移动的距离 
-    middleTextTipsDiv.style.top = lastTop + 'px';
+    this.style.top = lastTop + 'px';
+
+    headerTextDiv.style.top = maxTop1 + moveY + 'px';
+    middleTextDiv.style.top = maxTop2 + moveY + 'px';
+    hands.style.top = maxTop3 + moveY + 'px';
     // 控制台 打印位置
     // console.log('顶部最大高度' + maxTop)
     // console.log('距离顶部高度' + lastTop + 'px');
