@@ -1,6 +1,14 @@
 const cutHandsDiv = document.getElementById('cut-hands')
 
+const container = document.getElementById("container");
+
+const kmlight = document.getElementById("km-light");
+
+const music_text = document.getElementById("music-text-detail");
+
+
 const maxLeft = cutHandsDiv.offsetLeft - body.offsetLeft;
+
 
 var lightline = document.querySelector(".line");
 
@@ -40,5 +48,9 @@ cutHandsDiv.addEventListener('touchend', function () {
     console.log("手指离开！")
     lightline.style.display = 'none';
     lightlinenone.style.display = 'block';
+    setTimeout(() => {
+        container.style.display = "none";
+        music_text.style.display = "none";
+        kmlight.style.display = "none";
+    }, 2000);
 })
-

@@ -262,12 +262,13 @@ body {
     height: auto;
     animation: myfirst 5s;
     animation-timing-function: ease 3s;
+    /* display: none; */
 }
 
 .km-light .cut_hands {
     box-shadow: none !important;
     position: absolute;
-    right: 5%;
+    right: 3%;
     bottom: 28%;
     height: 10%;
     width: auto;
@@ -292,6 +293,7 @@ body {
         opacity: 0;
         display: none;
     }
+
 }
 
 .footer .km-light .line {
