@@ -52,5 +52,24 @@ cutHandsDiv.addEventListener('touchend', function () {
         container.style.display = "none";
         music_text.style.display = "none";
         kmlight.style.display = "none";
-    }, 2000);
+        jjIsDog();
+    }, 0);
 })
+
+
+function jjIsDog() {
+    const starGroup = [
+        '',
+        document.getElementById('musician1'),
+        document.getElementById('musician2'),
+        document.getElementById('musician3')
+    ]
+
+    for (let i = 1; i < 7; i++) {
+        setTimeout(() => {
+            starGroup[`${Math.ceil(i / 2)}`].style.opacity = i % 2;
+            starGroup[`${Math.ceil(i / 2)}`].style.transition = "ease 1s";
+        }, i * 1000);
+    }
+
+}
