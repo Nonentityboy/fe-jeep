@@ -35,6 +35,7 @@ body {
     border-bottom: 0px;
     pointer-events: none;
     /* 稍后改 */
+    display: none;
 }
 
 .container .header-bottom {
@@ -46,6 +47,7 @@ body {
     max-width: 74%;
     max-height: 100%;
     /* 调样式用 稍后去掉 */
+    display: none;
 }
 
 .container .header-bottom-text-group-two {
@@ -123,6 +125,7 @@ body {
     box-shadow: none !important;
     z-index: 0;
     /* 稍后改掉 */
+    display: none;
 }
 
 .moon_box {
