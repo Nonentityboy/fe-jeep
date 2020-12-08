@@ -84,6 +84,7 @@ function TwoAnimationPic() {
     setTimeout(() => {
         const secondGroup = document.getElementById('secondGroup');
         secondGroup.style.display = 'block';
+        // document.body.style.background = "url('https://s3.ax1x.com/2020/12/08/rpK7PP.png') no-repeat"
     }, 8800);
 
 }

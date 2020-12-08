@@ -151,6 +151,16 @@
     height: auto;
 }
 
+
+/* 
+.boxtongpan .konghou {
+    position: absolute;
+    width: 50%;
+    left: 26%;
+    top: 34%;
+    height: auto;
+} */
+
 .secondGroup {
     display: none;
 }
