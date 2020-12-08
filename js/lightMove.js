@@ -6,6 +6,9 @@ const kmlight = document.getElementById("km-light");
 
 const music_text = document.getElementById("music-text-detail");
 
+// const wholemusician = document.getElementById("wholemusician");
+// const wholemusician = document.getElementsByClassName("wholemusician");
+
 
 const maxLeft = cutHandsDiv.offsetLeft - body.offsetLeft;
 
@@ -52,8 +55,12 @@ cutHandsDiv.addEventListener('touchend', function () {
         container.style.display = "none";
         music_text.style.display = "none";
         kmlight.style.display = "none";
+    }, 1000);
+    setTimeout(() => {
         jjIsDog();
-    }, 0);
+
+    }, 800);
+
 })
 
 
@@ -62,10 +69,11 @@ function jjIsDog() {
         '',
         document.getElementById('musician1'),
         document.getElementById('musician2'),
-        document.getElementById('musician3')
+        document.getElementById('musician3'),
+        document.getElementById('musician4')
     ]
 
-    for (let i = 1; i < 7; i++) {
+    for (let i = 1; i < 9; i++) {
         setTimeout(() => {
             starGroup[`${Math.ceil(i / 2)}`].style.opacity = i % 2;
             starGroup[`${Math.ceil(i / 2)}`].style.transition = "ease 1s";
@@ -73,3 +81,8 @@ function jjIsDog() {
     }
 
 }
+
+//乐师头像详情
+
+// wholemusician.style.display = block;
+

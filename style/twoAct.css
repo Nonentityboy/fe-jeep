@@ -45,3 +45,12 @@
   pointer-events: none;
   /* animation: bottom-top-text 1s infinite alternate; */
 }
+
+/* .wholemusician {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: -100;
+  pointer-events: none;
+} */
