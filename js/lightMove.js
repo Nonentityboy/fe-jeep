@@ -6,6 +6,15 @@ const kmlight = document.getElementById("km-light");
 
 const music_text = document.getElementById("music-text-detail");
 
+const montainDiv = document.getElementById("montain");
+
+const bottomSignDiv = document.getElementById("bottom_sign");
+
+const fixStarDiv = document.getElementById("fixStar");
+
+const toolDiv = document.getElementById("tool");
+
+const starfieldDiv = document.getElementById('starfield');
 // const wholemusician = document.getElementById("wholemusician");
 // const wholemusician = document.getElementsByClassName("wholemusician");
 
@@ -55,6 +64,18 @@ cutHandsDiv.addEventListener('touchend', function() {
         container.style.display = "none";
         music_text.style.display = "none";
         kmlight.style.display = "none";
+        montainDiv.style.display = "none";
+        bottomSignDiv.style.display = "none";
+        fixStarDiv.style.display = "none";
+
+        toolDiv.style.background = "url('https://s3.ax1x.com/2020/12/09/r9F52d.png') bottom center no-repeat #efeff4";
+        toolDiv.style.backgroundSize = "100% 100%";
+
+        toolDiv.style.width = "100%";
+        toolDiv.style.height = "100%";
+
+
+        starfieldDiv.style.display = "block";
     }, 1000);
     setTimeout(() => {
         // 第二幕动效效果图
@@ -84,7 +105,7 @@ function TwoAnimationPic() {
     setTimeout(() => {
         const secondGroup = document.getElementById('secondGroup');
         secondGroup.style.display = 'block';
-        // document.body.style.background = "url('https://s3.ax1x.com/2020/12/08/rpK7PP.png') no-repeat"
+        montainDiv.style.display = 'none';
     }, 8800);
 
 }

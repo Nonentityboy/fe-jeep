@@ -99,7 +99,6 @@ function moveStartGroup() {
     const headerTextDiv = document.getElementById('header-bottom-text');
     const musicTestDetailDiv = document.getElementById('music-text-detail');
 
-    // const starfieldDiv = document.getElementById('starfield');
     // 第一幕第二组的三组星星乐曲特效效果
     const starGroup = [
         '',

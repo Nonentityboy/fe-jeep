@@ -149,18 +149,37 @@
     left: 26%;
     top: 34%;
     height: auto;
-    z-index: 17;
 }
 
-
-/* 
 .boxtongpan .konghou {
     position: absolute;
-    width: 50%;
-    left: 26%;
-    top: 34%;
+    pointer-events: none;
+    width: 80%;
+    left: 15%;
+    top: 5%;
+    z-index: 1;
     height: auto;
-} */
+}
+
+.konghouhands {
+    margin-top: 250px;
+    position: absolute;
+    pointer-events: none;
+    top: 20%;
+    left: 27%;
+    width: 15%;
+    height: 23%;
+}
+
+.konghouhandsCut {
+    position: absolute;
+    left: 40%;
+    bottom: 42%;
+    height: 8%;
+    box-shadow: none !important;
+    width: auto;
+    z-index: 1000;
+}
 
 .secondGroup {
     display: none;
