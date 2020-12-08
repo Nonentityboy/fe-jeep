@@ -22,7 +22,7 @@ lightlinenone.style.display = 'none';
 let startX;
 let x;
 
-cutHandsDiv.addEventListener('touchstart', function (e) {
+cutHandsDiv.addEventListener('touchstart', function(e) {
     // 获取手指初始坐标 
     startX = e.targetTouches[0].pageX;
     x = this.offsetLeft;
@@ -31,7 +31,7 @@ cutHandsDiv.addEventListener('touchstart', function (e) {
 
 
 // 手指按住移动 
-cutHandsDiv.addEventListener('touchmove', function (e) {
+cutHandsDiv.addEventListener('touchmove', function(e) {
     // 计算手指的移动距离：手指移动之后的坐标减去手指初始的坐标 
     let moveX = e.targetTouches[0].pageX - startX;
 
@@ -47,7 +47,7 @@ cutHandsDiv.addEventListener('touchmove', function (e) {
     e.preventDefault();
 });
 // 手指移动结束
-cutHandsDiv.addEventListener('touchend', function () {
+cutHandsDiv.addEventListener('touchend', function() {
     console.log("手指离开！")
     lightline.style.display = 'none';
     lightlinenone.style.display = 'block';
@@ -57,14 +57,15 @@ cutHandsDiv.addEventListener('touchend', function () {
         kmlight.style.display = "none";
     }, 1000);
     setTimeout(() => {
-        jjIsDog();
+        // 第二幕动效效果图
+        TwoAnimationPic();
 
     }, 800);
 
 })
 
 
-function jjIsDog() {
+function TwoAnimationPic() {
     const starGroup = [
         '',
         document.getElementById('musician1'),
@@ -81,8 +82,3 @@ function jjIsDog() {
     }
 
 }
-
-//乐师头像详情
-
-// wholemusician.style.display = block;
-
