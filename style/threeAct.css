@@ -1,0 +1,55 @@
+.tool .container .xiao {
+  position: absolute;
+  width: 38%;
+  height: auto;
+  left: -4%;
+  bottom: 4%;
+}
+
+.tool .container .ruan {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  left: -10%;
+  bottom: 11%;
+}
+
+.tool .container .guqin {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  left: 13%;
+  bottom: 20%;
+}
+
+.tool .container .konghou {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  left: 33%;
+  top: 30%;
+}
+
+.tool .container .sheng {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  right: 0%;
+  top: 30%;
+}
+
+.tool .container .xun {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  right: 0%;
+  top: 12%;
+}
+
+.tool .container .bianzhong {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  top: 8%;
+  left: 18%;
+}
