@@ -144,6 +144,7 @@
 
 .boxtongpan .tongpan {
     position: absolute;
+    opacity: 0;
     width: 50%;
     left: 26%;
     top: 34%;
