@@ -48,6 +48,50 @@ body {
     display: none;
 }
 
+.header-bottom-text-group-three {
+    margin-top: 0px;
+    position: absolute;
+    top: 80px;
+    left: 130px;
+    width: auto;
+    height: auto;
+    max-width: 55%;
+    max-height: 95%;
+}
+
+.header-bottom-text-group-three-left {
+    margin-top: 0px;
+    position: absolute;
+    top: -11px;
+    left: -17px;
+    width: auto;
+    height: auto;
+    max-width: 25%;
+    max-height: 25%;
+}
+
+.header-bottom-text-group-three-bottom {
+    margin-top: 250px;
+    position: absolute;
+    top: -12px;
+    left: 55px;
+    width: auto;
+    height: auto;
+    max-width: 25%;
+    max-height: 25%;
+}
+
+.header-bottom-text-group-three-hands {
+    margin-top: 250px;
+    position: absolute;
+    top: 80px;
+    left: 85px;
+    width: auto;
+    height: auto;
+    max-width: 15%;
+    max-height: 15%;
+}
+
 .footer {
     width: 100%;
     bottom: 0;
@@ -293,7 +337,6 @@ body {
         opacity: 0;
         display: none;
     }
-
 }
 
 .footer .km-light .line {

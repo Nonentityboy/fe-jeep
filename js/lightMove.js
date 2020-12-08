@@ -81,4 +81,9 @@ function TwoAnimationPic() {
         }, i * 1000);
     }
 
+    setTimeout(() => {
+        const secondGroup = document.getElementById('secondGroup');
+        secondGroup.style.display = 'block';
+    }, 8800);
+
 }

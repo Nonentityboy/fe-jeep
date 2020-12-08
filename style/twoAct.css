@@ -1,147 +1,155 @@
 .musician1 {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  opacity: 0;
-  pointer-events: none;
-  /* animation: bottom-top-text 1s infinite alternate; */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    /* animation: bottom-top-text 1s infinite alternate; */
 }
 
 .musician2 {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  opacity: 0;
-  pointer-events: none;
-  /* animation: bottom-top-text 1s infinite alternate; */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    /* animation: bottom-top-text 1s infinite alternate; */
 }
 
 .musician3 {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  opacity: 0;
-  pointer-events: none;
-  /* animation: bottom-top-text 1s infinite alternate; */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    /* animation: bottom-top-text 1s infinite alternate; */
 }
 
 .musician4 {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  opacity: 0;
-  pointer-events: none;
-  /* animation: bottom-top-text 1s infinite alternate; */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    /* animation: bottom-top-text 1s infinite alternate; */
 }
 
 .wholemusician {
-  position: relative;
-  width: 100%;
-  height: 100%;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
+
 
 /* 交互文字 */
 
 .textjiaohu {
-  position: absolute;
-  top: 4%;
-  right: 10%;
-  width: 50%;
-  height: auto;
+    position: absolute;
+    top: 4%;
+    right: 10%;
+    width: 50%;
+    height: auto;
 }
+
 
 /* 伯牙 */
 
 .boyaimg {
-  position: absolute;
-  top: -35px;
-  left: -38px;
-  width: 33%;
-  height: auto;
-  overflow: hidden;
+    position: absolute;
+    top: -35px;
+    left: -38px;
+    width: 33%;
+    height: auto;
+    overflow: hidden;
 }
+
 
 /* 孔子 */
 
 .kongziimg {
-  position: absolute;
-  width: 33%;
-  height: auto;
-  left: 10%;
-  top: 13%;
-  overflow: hidden;
+    position: absolute;
+    width: 33%;
+    height: auto;
+    left: 10%;
+    top: 13%;
+    overflow: hidden;
 }
+
 
 /* 师旷 */
 
 .shikuangimg {
-  position: absolute;
-  width: 38%;
-  height: auto;
-  right: 0px;
-  top: 258px;
-  overflow: hidden;
+    position: absolute;
+    width: 38%;
+    height: auto;
+    right: 0px;
+    top: 258px;
+    overflow: hidden;
 }
+
 
 /* 阮籍 */
 
 .ruanjiimg {
-  position: absolute;
-  width: 34%;
-  height: auto;
-  left: -63px;
-  bottom: 300px;
+    position: absolute;
+    width: 34%;
+    height: auto;
+    left: -63px;
+    bottom: 300px;
 }
 
 .caiimg {
-  position: absolute;
-  width: 31%;
-  height: auto;
-  left: 170px;
-  bottom: 130px;
+    position: absolute;
+    width: 31%;
+    height: auto;
+    left: 170px;
+    bottom: 130px;
 }
 
 .guochuwangimg {
-  position: absolute;
-  width: 33%;
-  height: auto;
-  right: 0px;
-  bottom: 215px
+    position: absolute;
+    width: 33%;
+    height: auto;
+    right: 0px;
+    bottom: 215px
 }
 
 .dongtinglanimg {
-  position: absolute;
-  width: 33%;
-  height: auto;
-  right: 136px;
-  bottom: 30px;
+    position: absolute;
+    width: 33%;
+    height: auto;
+    right: 136px;
+    bottom: 30px;
 }
 
 .jikangimg {
-  position: absolute;
-  width: 38%;
-  height: auto;
-  right: 238px;
-  bottom: 266px;
+    position: absolute;
+    width: 38%;
+    height: auto;
+    right: 238px;
+    bottom: 266px;
 }
 
-
 .boxtongpan .tongpan {
-  position: absolute;
-  width: 50%;
-  left: 26%;
-  top: 34%;
-  height: auto;
+    position: absolute;
+    width: 50%;
+    left: 26%;
+    top: 34%;
+    height: auto;
+}
+
+.secondGroup {
+    display: none;
 }
