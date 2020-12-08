@@ -9,11 +9,12 @@ const textdongtinglanimg = document.getElementById('dongtinglanimg');
 const textguochuwangimg = document.getElementById('guochuwangimg');
 const textshikuangimg = document.getElementById('shikuangimg');
 
-console.log(123123);
+const threeGroupDiv = document.getElementById('threeGroup');
+const secondGroupDiv = document.getElementById('secondGroup');
 
-const maxLeftKongHou = konghouhandsCutsDiv.offsetLeft - body.offsetLeft;
+const maxRightKongHou = konghouhandsCutsDiv.offsetRight - body.offsetRight;
 
-console.log(maxLeftKongHou)
+console.log(maxRightKongHou)
 let startXX;
 let xx;
 
@@ -21,7 +22,7 @@ konghouhandsCutsDiv.addEventListener('touchstart', function(e) {
     console.log("手指11")
         // 获取手指初始坐标 
     startXX = e.targetTouches[0].pageX;
-    xx = this.offsetLeft;
+    xx = this.offsetRight;
     this.style.boxShadow = '0 0 15px rgba(0, 0, 0, .6)';
 });
 
@@ -29,24 +30,23 @@ konghouhandsCutsDiv.addEventListener('touchmove', function(e) {
     // 计算手指的移动距离：手指移动之后的坐标减去手指初始的坐标 
     let moveX = e.targetTouches[0].pageX - startXX;
 
-    let lastLeft = xx + moveX;
+    let lastRight = xx + moveX;
 
     //防止超出父元素范围
-    if (lastLeft < 0) lastLeft = 0;
-    if (lastLeft > maxLeftKongHou) lastLeft = maxLeftKongHou;
+    if (lastRight < 0) lastRight = 0;
+    if (lastRight > maxRightKongHou) lastRight = maxRightKongHou;
 
     // 移动盒子 盒子原来的位置 + 手指移动的距离 
-    this.style.left = lastLeft + 'px';
+    this.style.right = lastRight + 'px';
     // 阻止屏幕滚动的默认行为 
     e.preventDefault();
 });
 
 // 手指移动结束
 konghouhandsCutsDiv.addEventListener('touchend', function() {
-    console.log("手指离开！")
+    secondGroupDiv.style.display = "none";
+    threeGroupDiv.style.display = "block";
 })
-
-console.log(11111);
 
 
 // 嵇康铜盘

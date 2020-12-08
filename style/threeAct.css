@@ -1,4 +1,4 @@
-.tool .container .xiao {
+.xiao {
     position: absolute;
     width: 38%;
     height: auto;
@@ -6,7 +6,7 @@
     bottom: 4%;
 }
 
-.tool .container .ruan {
+.ruan {
     position: absolute;
     width: 50%;
     height: auto;
@@ -14,7 +14,7 @@
     bottom: 11%;
 }
 
-.tool .container .guqin {
+.guqin {
     position: absolute;
     width: 50%;
     height: auto;
@@ -22,7 +22,7 @@
     bottom: 20%;
 }
 
-.tool .container .konghou {
+.konghou {
     position: absolute;
     width: 50%;
     height: auto;
@@ -30,7 +30,7 @@
     top: 30%;
 }
 
-.tool .container .sheng {
+.sheng {
     position: absolute;
     width: 50%;
     height: auto;
@@ -38,7 +38,7 @@
     top: 30%;
 }
 
-.tool .container .xun {
+.xun {
     position: absolute;
     width: 50%;
     height: auto;
@@ -46,10 +46,15 @@
     top: 12%;
 }
 
-.tool .container .bianzhong {
+.bianzhong {
     position: absolute;
     width: 50%;
     height: auto;
     top: 8%;
     left: 18%;
+}
+
+.threeGroup {
+    display: none;
+    z-index: 1000;
 }
