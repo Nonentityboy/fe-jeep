@@ -1,57 +1,59 @@
 .xiao {
     position: absolute;
-    width: 38%;
-    height: auto;
-    left: -4%;
-    bottom: 4%;
+    height: 203.25px;
+    /* width: 283.69px; */
+    width: 283.69px;
+    left: 22px;
+    bottom: 54px;
 }
 
 .ruan {
     position: absolute;
-    width: 50%;
-    height: auto;
-    left: -10%;
-    bottom: 11%;
+    width: 157.36px;
+    /* height: 231.35px; */
+    height: 266.45px;
+    left: 53px;
+    bottom: 232px;
 }
 
 .guqin {
     position: absolute;
-    width: 50%;
-    height: auto;
-    left: 13%;
-    bottom: 20%;
+    width: 76.6px;
+    height: 396.34px;
+    left: 231px;
+    bottom: 339px;
 }
 
 .konghou {
     position: absolute;
-    width: 50%;
-    height: auto;
-    left: 33%;
-    top: 30%;
+    width: 130.39px;
+    height: 299.26px;
+    left: 343px;
+    bottom: 475px;
 }
 
 .sheng {
     position: absolute;
-    width: 50%;
+    width: 179.85px;
     height: auto;
-    right: 0%;
-    top: 30%;
+    left: 538px;
+    bottom: 576px;
 }
 
 .xun {
     position: absolute;
-    width: 50%;
-    height: auto;
-    right: 0%;
-    top: 12%;
+    width: 199.38px;
+    height: 179.85px;
+    left: 637px;
+    bottom: 831px;
 }
 
 .bianzhong {
     position: absolute;
-    width: 50%;
-    height: auto;
-    top: 8%;
-    left: 18%;
+    width: 334.92px;
+    height: 226.64px;
+    left: 246px;
+    bottom: 858px;
 }
 
 .threeGroup {
