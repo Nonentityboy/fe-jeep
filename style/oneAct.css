@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
     width: 100%;
     height: 100%;
 }
@@ -55,40 +54,30 @@ body {
 }
 
 .header-bottom-text-group-three {
-    margin-top: 0px;
     position: absolute;
-    top: 80px;
-    left: 130px;
-    width: auto;
-    height: auto;
-    max-width: 55%;
-    max-height: 95%;
+    top: 41px;
+    left: 182px;
+    width: 426px;
+    height: 62px;
 }
 
 .header-bottom-text-group-three-left {
-    margin-top: 0px;
-    position: absolute;
-    top: -11px;
-    left: -17px;
-    width: auto;
-    height: auto;
-    max-width: 25%;
-    max-height: 25%;
-}
-
-.header-bottom-text-group-three-bottom {
-    margin-top: 250px;
     position: absolute;
     top: -12px;
     left: 55px;
-    width: auto;
-    height: auto;
-    max-width: 25%;
-    max-height: 25%;
+    width: 246px;
+    height: 313px;
+}
+
+.header-bottom-text-group-three-bottom {
+    position: absolute;
+    top: -12px;
+    left: 55px;
+    width: 246px;
+    height: 313px;
 }
 
 .header-bottom-text-group-three-hands {
-    margin-top: 250px;
     position: absolute;
     top: 80px;
     left: 85px;
@@ -136,7 +125,6 @@ body {
     display: none;
     z-index: 15;
 }
-
 
 /* .music-text-detail .box_music {
 width: 50%;
@@ -285,7 +273,6 @@ z-index: 15;
     /* z-index: 11; */
 }
 
-
 /* 孔明灯样式 */
 
 .km-light {
@@ -348,14 +335,12 @@ z-index: 15;
     animation-duration: 5s;
 }
 
-
 /* 点击版 */
 
 .footer .box_music .btn {
     z-index: -1;
     opacity: 0;
 }
-
 
 /* 禁止长按图片保存 */
 
