@@ -9,7 +9,7 @@ const xiaoxiang = document.getElementById('xiaoxiang');
 
 //添加事件监听函数
 //神人畅
-shenren.addEventListener('touchstart', function() {
+shenren.addEventListener('touchstart', function(e) {
     const btn = document.getElementById('shenrenClick');
     shenren.style.opacity = 0;
     btn.style.opacity = 1;
@@ -20,7 +20,7 @@ shenren.addEventListener('touchstart', function() {
     e.preventDefault();
 })
 
-shenren.addEventListener('touchend', function() {
+shenren.addEventListener('touchend', function(e) {
     const btn = document.getElementById('shenrenClick');
     shenren.style.opacity = 1;
     btn.style.opacity = 0;
@@ -32,7 +32,7 @@ shenren.addEventListener('touchend', function() {
 })
 
 //妆台秋思
-zhuangtai.addEventListener('touchstart', function() {
+zhuangtai.addEventListener('touchstart', function(e) {
     const btn = document.getElementById('zhuangtaiClick');
     zhuangtai.style.opacity = 0;
     btn.style.opacity = 1;
@@ -43,7 +43,7 @@ zhuangtai.addEventListener('touchstart', function() {
     e.preventDefault();
 })
 
-zhuangtai.addEventListener('touchend', function() {
+zhuangtai.addEventListener('touchend', function(e) {
     const btn = document.getElementById('zhuangtaiClick');
     zhuangtai.style.opacity = 1;
     btn.style.opacity = 0;
@@ -55,7 +55,7 @@ zhuangtai.addEventListener('touchend', function() {
 })
 
 //梅花三弄
-meihua.addEventListener('touchstart', function() {
+meihua.addEventListener('touchstart', function(e) {
     const btn = document.getElementById('meihuaClick');
     meihua.style.opacity = 0;
     btn.style.opacity = 1;
@@ -66,7 +66,7 @@ meihua.addEventListener('touchstart', function() {
     e.preventDefault();
 })
 
-meihua.addEventListener('touchend', function() {
+meihua.addEventListener('touchend', function(e) {
     const btn = document.getElementById('meihuaClick');
     meihua.style.opacity = 1;
     btn.style.opacity = 0;
@@ -78,7 +78,7 @@ meihua.addEventListener('touchend', function() {
 })
 
 //广陵散
-guangling.addEventListener('touchstart', function() {
+guangling.addEventListener('touchstart', function(e) {
     const btn = document.getElementById('guanglingClick');
     guangling.style.opacity = 0;
     btn.style.opacity = 1;
@@ -88,7 +88,7 @@ guangling.addEventListener('touchstart', function() {
     e.preventDefault();
 })
 
-guangling.addEventListener('touchend', function() {
+guangling.addEventListener('touchend', function(e) {
     const btn = document.getElementById('guanglingClick');
     guangling.style.opacity = 1;
     btn.style.opacity = 0;
@@ -99,7 +99,7 @@ guangling.addEventListener('touchend', function() {
 })
 
 //霓裳曲
-nichang.addEventListener('touchstart', function() {
+nichang.addEventListener('touchstart', function(e) {
     const btn = document.getElementById('nichangClick');
     nichang.style.opacity = 0;
     btn.style.opacity = 1;
@@ -111,7 +111,7 @@ nichang.addEventListener('touchstart', function() {
 
 })
 
-nichang.addEventListener('touchend', function() {
+nichang.addEventListener('touchend', function(e) {
     const btn = document.getElementById('nichangClick');
     nichang.style.opacity = 1;
     btn.style.opacity = 0;
@@ -123,7 +123,7 @@ nichang.addEventListener('touchend', function() {
 })
 
 //月儿高
-yueer.addEventListener('touchstart', function() {
+yueer.addEventListener('touchstart', function(e) {
     const btn = document.getElementById('yueerClick');
     yueer.style.opacity = 0;
     btn.style.opacity = 1;
@@ -134,7 +134,7 @@ yueer.addEventListener('touchstart', function() {
     e.preventDefault();
 })
 
-yueer.addEventListener('touchend', function() {
+yueer.addEventListener('touchend', function(e) {
     const btn = document.getElementById('yueerClick');
     yueer.style.opacity = 1;
     btn.style.opacity = 0;
@@ -146,7 +146,7 @@ yueer.addEventListener('touchend', function() {
 })
 
 // 潇湘水云
-xiaoxiang.addEventListener('touchstart', function() {
+xiaoxiang.addEventListener('touchstart', function(e) {
     const btn = document.getElementById('xiaoxiangClick');
     xiaoxiang.style.opacity = 0;
     btn.style.opacity = 1;
@@ -157,7 +157,7 @@ xiaoxiang.addEventListener('touchstart', function() {
     e.preventDefault();
 })
 
-xiaoxiang.addEventListener('touchend', function() {
+xiaoxiang.addEventListener('touchend', function(e) {
     const btn = document.getElementById('xiaoxiangClick');
     xiaoxiang.style.opacity = 1;
     btn.style.opacity = 0;
