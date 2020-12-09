@@ -351,7 +351,7 @@ body {
     opacity: 0;
 }
 
-img {
+.box_music img {
     pointer-events: none;
     /* 禁止长按图片保存 */
 }
