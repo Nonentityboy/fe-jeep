@@ -27,6 +27,9 @@ body {
     bottom: 0;
     border-bottom: 0px;
     pointer-events: none;
+    <<<<<<< HEAD=======/* 稍后改 */
+    display: none;
+    >>>>>>>second-dev
 }
 
 .container .header-bottom {
@@ -37,6 +40,9 @@ body {
     height: auto;
     max-width: 74%;
     max-height: 100%;
+    <<<<<<< HEAD=======/* 调样式用 稍后去掉 */
+    display: none;
+    >>>>>>>second-dev
 }
 
 .container .header-bottom-text-group-two {
