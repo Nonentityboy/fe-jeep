@@ -43,95 +43,112 @@ konghouhandsCutsDiv.addEventListener('touchmove', function(e) {
 });
 
 // 手指移动结束
-konghouhandsCutsDiv.addEventListener('touchend', function() {
+konghouhandsCutsDiv.addEventListener('touchend', function(e) {
     secondGroupDiv.style.display = "none";
     threeGroupDiv.style.display = "block";
+    e.preventDefault();
 })
 
 
 // 嵇康铜盘
-textjikangimg.addEventListener('touchstart', function() {
+textjikangimg.addEventListener('touchstart', function(e) {
     console.log(11111)
     const btn = document.getElementById('jikangimgtongpan');
     btn.style.opacity = 1;
+    e.preventDefault();
 })
 
-textjikangimg.addEventListener('touchend', function() {
+textjikangimg.addEventListener('touchend', function(e) {
     const btn = document.getElementById('jikangimgtongpan');
     btn.style.opacity = 0;
+    e.preventDefault();
 })
 
 // 阮籍铜盘
-textruanjiimg.addEventListener('touchstart', function() {
+textruanjiimg.addEventListener('touchstart', function(e) {
     const btn1 = document.getElementById('ruanjiimgtongpan');
     btn1.style.opacity = 1;
+    e.preventDefault();
 })
-textruanjiimg.addEventListener('touchend', function() {
+textruanjiimg.addEventListener('touchend', function(e) {
         const btn1 = document.getElementById('ruanjiimgtongpan');
         btn1.style.opacity = 0;
+        e.preventDefault();
     })
     // 伯牙铜盘
-textboyaimg.addEventListener('touchstart', function() {
+textboyaimg.addEventListener('touchstart', function(e) {
     const btn = document.getElementById('boyaimgtongpan');
     btn.style.opacity = 1;
+    e.preventDefault();
 })
 
-textboyaimg.addEventListener('touchend', function() {
+textboyaimg.addEventListener('touchend', function(e) {
     const btn = document.getElementById('boyaimgtongpan');
     btn.style.opacity = 0;
+    e.preventDefault();
 })
 
 // 孔子铜盘
-textkongziimg.addEventListener('touchstart', function() {
+textkongziimg.addEventListener('touchstart', function(e) {
     const btn = document.getElementById('kongziimgtongpan');
     btn.style.opacity = 1;
+    e.preventDefault();
 })
 
-textkongziimg.addEventListener('touchend', function() {
+textkongziimg.addEventListener('touchend', function(e) {
     const btn = document.getElementById('kongziimgtongpan');
     btn.style.opacity = 0;
+    e.preventDefault();
 })
 
 // 蔡邕铜盘
-textcaiyongimg.addEventListener('touchstart', function() {
+textcaiyongimg.addEventListener('touchstart', function(e) {
     const btn = document.getElementById('caiyongimgtongpan');
     btn.style.opacity = 1;
+    e.preventDefault();
 })
 
-textcaiyongimg.addEventListener('touchend', function() {
+textcaiyongimg.addEventListener('touchend', function(e) {
     const btn = document.getElementById('caiyongimgtongpan');
     btn.style.opacity = 0;
+    e.preventDefault();
 })
 
 // 董廷兰铜盘
-textdongtinglanimg.addEventListener('touchstart', function() {
+textdongtinglanimg.addEventListener('touchstart', function(e) {
     const btn = document.getElementById('dongtinglanimgtongpan');
     btn.style.opacity = 1;
+    e.preventDefault();
 })
 
-textdongtinglanimg.addEventListener('touchend', function() {
+textdongtinglanimg.addEventListener('touchend', function(e) {
     const btn = document.getElementById('dongtinglanimgtongpan');
     btn.style.opacity = 0;
+    e.preventDefault();
 })
 
 // 郭楚忘铜盘
-textguochuwangimg.addEventListener('touchstart', function() {
+textguochuwangimg.addEventListener('touchstart', function(e) {
     const btn = document.getElementById('guochuwangimgtongpan');
     btn.style.opacity = 1;
+    e.preventDefault();
 })
 
-textguochuwangimg.addEventListener('touchend', function() {
+textguochuwangimg.addEventListener('touchend', function(e) {
     const btn = document.getElementById('guochuwangimgtongpan');
     btn.style.opacity = 0;
+    e.preventDefault();
 })
 
 // 师旷铜盘
-textshikuangimg.addEventListener('touchstart', function() {
+textshikuangimg.addEventListener('touchstart', function(e) {
     const btn = document.getElementById('shikuangimgtongpan');
     btn.style.opacity = 1;
+    e.preventDefault();
 })
 
-textshikuangimg.addEventListener('touchend', function() {
+textshikuangimg.addEventListener('touchend', function(e) {
     const btn = document.getElementById('shikuangimgtongpan');
     btn.style.opacity = 0;
+    e.preventDefault();
 })
