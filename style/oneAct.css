@@ -354,8 +354,6 @@ body {
 
 /* 禁止长按图片保存 */
 
-
-/* 
-.box_music img {
-    pointer-events: none;
-} */
+img {
+    -webkit-touch-callout: none;
+}
