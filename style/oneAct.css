@@ -142,6 +142,7 @@ body {
     width: 35%;
     height: auto;
     position: absolute;
+    pointer-events: none;
     left: 6%;
     top: 22%;
 }
@@ -348,4 +349,9 @@ body {
 .footer .box_music .btn {
     z-index: -1;
     opacity: 0;
+}
+
+img {
+    pointer-events: none;
+    /* 禁止长按图片保存 */
 }
