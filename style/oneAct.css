@@ -27,30 +27,28 @@ body {
     bottom: 0;
     border-bottom: 0px;
     pointer-events: none;
-    <<<<<<< HEAD=======/* 稍后改 */
-    display: none;
-    >>>>>>>second-dev
+    /* display: none; */
 }
 
 .container .header-bottom {
     margin-top: 0px;
     position: absolute;
-    top: 140px;
+    top: 306px;
     width: auto;
     height: auto;
     max-width: 74%;
     max-height: 100%;
-    <<<<<<< HEAD=======/* 调样式用 稍后去掉 */
-    display: none;
-    >>>>>>>second-dev
+    /* display: none; */
 }
 
 .container .header-bottom-text-group-two {
-    margin-top: 140px;
-    width: auto;
+    top: 166px;
+    left: 127px;
+    width: 585px;
     height: auto;
     max-width: 74%;
     max-height: 100%;
+    position: absolute;
     display: none;
 }
 
@@ -105,18 +103,20 @@ body {
 
 .footer-bottom-middle :active {
     position: absolute;
-    width: 50%;
-    left: 25%;
-    bottom: 1%;
+    width: 395px;
+    height: auto;
+    top: 1239px;
+    left: 292px;
     box-shadow: none !important;
     z-index: 0;
 }
 
 .footer-bottom-middle {
     position: absolute;
-    width: 50%;
-    left: 25%;
-    bottom: 1%;
+    width: 395px;
+    height: auto;
+    top: 1239px;
+    left: 292px;
     box-shadow: none !important;
     z-index: 0;
 }
@@ -128,8 +128,15 @@ body {
 .middle-text-tips {
     position: absolute;
     animation: bottom-top-text 1s infinite alternate;
-    left: 47%;
-    top: 33%;
+    width: 45px;
+    height: 337px;
+    top: 900px;
+    left: 483px;
+}
+
+.middle-text-tips img {
+    width: 45px;
+    height: auto;
 }
 
 .music-text-detail {
@@ -148,8 +155,8 @@ z-index: 15;
     width: 35%;
     height: auto;
     position: absolute;
-    left: 6%;
-    top: 22%;
+    top: 305px;
+    left: 100px;
 }
 
 .music-text-detail .box_music .size {
@@ -165,8 +172,8 @@ z-index: 15;
 }
 
 .music-text-detail .box_music .zhuangtai {
-    left: 6%;
-    top: 22%;
+    top: 305px;
+    left: 100px;
 }
 
 .music-text-detail .box_music .guangling {
@@ -175,39 +182,76 @@ z-index: 15;
 }
 
 .music-text-detail .box_music .meihua {
-    left: 2%;
-    top: 48%;
+    left: -10px;
+    top: 666px;
 }
 
 .music-text-detail .box_music .shenren {
+    height: 20%;
+    width: auto;
     left: 30%;
     top: 37%;
 }
 
 .music-text-detail .box_music .nichang {
-    left: 64%;
-    top: 36%;
+    width: 30%;
+    left: 68%;
+    top: 30%;
 }
 
 .music-text-detail .box_music .yueer {
-    left: 13%;
-    top: 60%;
-    height: 13%;
+    left: 50px;
+    top: 950px;
+    height: 350px;
     width: auto;
 }
 
 .music-text-detail .box_music .xiaoxiang {
-    left: 35%;
-    top: 60%;
-    height: 21%;
+    left: 36%;
+    top: 56%;
+    height: 24%;
     width: auto;
 }
 
 .hands {
     position: absolute;
     animation: bottom-top-text 1s infinite alternate;
-    left: 56%;
-    top: 59%;
+    width: 103px;
+    height: 106px;
+    left: 524px;
+    top: 1154px;
+}
+
+.hands img {
+    width: 103px;
+    height: 106px;
+    left: 524px;
+    top: 1214px;
+}
+
+.hands-animation {
+    width: 103px;
+    height: 106px;
+    left: 524px;
+    position: absolute;
+    top: 1154px;
+    animation: hands-animation-one-group 3s infinite normal;
+}
+
+.hands-animation img {
+    width: 103px;
+    height: 106px;
+    left: 524px;
+}
+
+@keyframes hands-animation-one-group {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        top: 860px;
+    }
 }
 
 .bottom_sign {
@@ -315,14 +359,42 @@ z-index: 15;
     /* display: none; */
 }
 
+.noneline-descript {
+    position: absolute;
+    right: 3%;
+    bottom: 37%;
+    height: 3%;
+    width: auto;
+}
+
 .km-light .cut_hands {
     box-shadow: none !important;
     position: absolute;
-    right: 3%;
+    right: 6%;
     bottom: 28%;
-    height: 10%;
+    height: 8%;
     width: auto;
     z-index: 10;
+}
+
+.cut_hands_move {
+    position: absolute;
+    right: 6%;
+    bottom: 28%;
+    height: 8%;
+    width: auto;
+    animation: hands-cut-hands-one-group 3s infinite normal;
+    z-index: 6;
+}
+
+@keyframes hands-cut-hands-one-group {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        right: 30%;
+    }
 }
 
 .starfield {
@@ -360,12 +432,6 @@ z-index: 15;
 /* 禁止长按图片保存 */
 
 * {
-    /* -webkit-touch-callout: none;
--webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none; */
     -webkit-touch-callout: none;
     /* iOS Safari */
     -webkit-user-select: none;

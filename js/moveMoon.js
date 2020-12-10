@@ -14,6 +14,8 @@ const headerTextDiv = document.getElementById('header-bottom-text');
 const middleTextDiv = document.getElementById('middle-text-tips');
 const hands = document.getElementById('hands');
 
+const handsAnimation = document.getElementById('hands-animation');
+
 const maxTop1 = headerTextDiv.offsetTop;
 const maxTop2 = middleTextDiv.offsetTop;
 const maxTop3 = hands.offsetTop;
@@ -61,6 +63,7 @@ div.addEventListener('touchend', function(e) {
         moonDiv.style.transition = "ease 2s";
         middleTextDiv.style.display = 'none';
         middleTextDiv.style.transition = "ease 2s";
+        handsAnimation.style.display = "none";
         hands.style.display = 'none';
         hands.style.transition = "ease 2s";
     }
@@ -99,6 +102,8 @@ function moveStartGroup() {
     const headerTextDiv = document.getElementById('header-bottom-text');
     const musicTestDetailDiv = document.getElementById('music-text-detail');
 
+
+    const moonDiv = document.getElementById('footer-bottom-middle');
     // 第一幕第二组的三组星星乐曲特效效果
     const starGroup = [
         '',
@@ -116,8 +121,10 @@ function moveStartGroup() {
 
     // 控制孔明灯 及第一幕第二组
     setTimeout(() => {
+        moonDiv.style.display = 'none';
+
         headerTextDiv.style.display = 'none';
-        headerTextGroupTwoDiv.style.display = 'block';
+        headerTextGroupTwoDiv.style.display = 'inline-block';
         kmLightDiv.style.opacity = 1;
         kmLightDiv.style.transition = "ease 2s";
         musicTestDetailDiv.style.display = 'block';
