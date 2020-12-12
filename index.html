@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./style/animation.css">
     <link rel="stylesheet" href="./style/twoAct.css">
     <link rel="stylesheet" href="./style/threeAct.css">
+    <link rel="stylesheet" href="./style/fourAct.css">
 </head>
 
 <body>
@@ -27,13 +28,13 @@
             <div class="middle-text-tips" id="middle-text-tips">
                 <img src="https://s3.ax1x.com/2020/11/30/DRUJDH.png" alt="中央文字提示">
             </div>
-            <div class="hands" id="hands">
+            <div class="hands" id="hands" style="display: none;">
                 <img src="https://s3.ax1x.com/2020/12/11/rkAXeH.png" alt="佛手图形">
             </div>
             <div class="hands-animation" id="hands-animation">
                 <img src="https://s3.ax1x.com/2020/12/11/rkAXeH.png" alt="佛手图形">
             </div>
-            <img src="https://s3.ax1x.com/2020/12/11/rkE7As.png" alt="月球" class="footer-bottom-middle" id="footer-bottom-middle"></img>
+            <img src="https://s3.ax1x.com/2020/12/11/rkXXWj.png" alt="月球" class="footer-bottom-middle" id="footer-bottom-middle"></img>
         </div>
 
         <!-- 页面底 -->
@@ -262,6 +263,11 @@
                     controls="controls">
             </div>
         </div>
+
+        <!-- 第四幕 -->
+        <!-- <div class="fourGroup">
+            <img src="https://s3.ax1x.com/2020/12/12/rV3JFP.png" alt="第四幕背景" class="fourGroup">
+        </div> -->
     </div>
     <!-- 粒子效果 -->
     <div class="starfield" id="starfield">
@@ -275,7 +281,20 @@
     <script src="./js/clickText.js"></script>
     <script src="./js/load.js"></script>
     <script src="./js/yueshiClick.js"></script>
+    <script src="./js/fourClick.js"></script>
+    
+    <script>
+        var _mtac = {};
+        (function() {
+            var mta = document.createElement("script");
+            mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
+            mta.setAttribute("name", "MTAH5");
+            mta.setAttribute("sid", "500735495");
 
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(mta, s);
+        })();
+    </script>
 </body>
 
 
