@@ -65,7 +65,6 @@ cutHandsDiv.addEventListener('touchend', function() {
         music_text.style.display = "none";
         kmlight.style.display = "none";
         montainDiv.style.display = "none";
-        bottomSignDiv.style.display = "none";
         fixStarDiv.style.display = "none";
 
         toolDiv.style.background = "url('https://s3.ax1x.com/2020/12/09/r9F52d.png') bottom center no-repeat #efeff4";

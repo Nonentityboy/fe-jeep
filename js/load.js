@@ -11,13 +11,7 @@ window.addEventListener("load", function(event) {
         setTimeout(() => {
             console.log(i)
             pageText[i].style.opacity = 1;
-            pageText[i].style.transition = "ease 1s";
+            pageText[i].style.transition = "ease 10s";
         }, i * 1000);
     }
-
-    setTimeout(() => {
-        // headerChange.style.display = 'none';
-        // headerTextChange.style.opacity = 1;
-    }, 3000);
-
 });
