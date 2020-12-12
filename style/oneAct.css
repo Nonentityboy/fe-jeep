@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .container .header .top_text {
@@ -30,15 +30,37 @@ body {
     /* display: none; */
 }
 
-.container .header-bottom {
+.header-bottom-change {
+    margin-left: 115px;
+    position: relative;
+    opacity: 1;
+}
+
+.container .header-bottom-text-one {
     margin-top: 0px;
     position: absolute;
     top: 306px;
-    width: auto;
+    width: 720px;
     height: auto;
-    max-width: 74%;
-    max-height: 100%;
-    /* display: none; */
+    opacity: 0;
+}
+
+.container .header-bottom-text-two {
+    margin-top: 0px;
+    position: absolute;
+    top: 384px;
+    width: 720px;
+    height: auto;
+    opacity: 0;
+}
+
+.container .header-bottom-text-three {
+    margin-top: 0px;
+    position: absolute;
+    top: 463px;
+    width: 720px;
+    height: auto;
+    opacity: 0;
 }
 
 .container .header-bottom-text-group-two {

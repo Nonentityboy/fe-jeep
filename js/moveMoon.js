@@ -10,7 +10,7 @@ var tint;
 let lastTop;
 
 
-const headerTextDiv = document.getElementById('header-bottom-text');
+const headerTextDiv = document.getElementById('header-bottom-text-change');
 const middleTextDiv = document.getElementById('middle-text-tips');
 const hands = document.getElementById('hands');
 
@@ -99,7 +99,7 @@ function moveStartGroup() {
     // 获取孔明灯和孔明灯手势
     const kmLightDiv = document.getElementById('km-light');
     const headerTextGroupTwoDiv = document.getElementById('header-bottom-text-group-two');
-    const headerTextDiv = document.getElementById('header-bottom-text');
+    const headerTextDiv = document.getElementById('header-bottom-text-change');
     const musicTestDetailDiv = document.getElementById('music-text-detail');
 
 
