@@ -125,8 +125,10 @@ function moveStartGroup() {
 
         headerTextDiv.style.display = 'none';
         headerTextGroupTwoDiv.style.display = 'inline-block';
-        kmLightDiv.style.opacity = 1;
-        kmLightDiv.style.transition = "ease 2s";
+
+        // 孔明灯不让跳转
+        // kmLightDiv.style.opacity = 1;
+        // kmLightDiv.style.transition = "ease 2s";
         musicTestDetailDiv.style.display = 'block';
     }, 1000);
 }

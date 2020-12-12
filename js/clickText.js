@@ -15,6 +15,8 @@ const sheng = document.getElementById('sheng');
 const xun = document.getElementById('xun');
 const bianzhong = document.getElementById('bianzhong');
 
+const kmLightDiv = document.getElementById('km-light');
+
 //添加事件监听函数
 //神人畅
 shenren.addEventListener('touchstart', function(e) {
@@ -29,6 +31,8 @@ shenren.addEventListener('touchstart', function(e) {
 })
 
 shenren.addEventListener('touchend', function(e) {
+    kmLightDiv.style.opacity = 1;
+    kmLightDiv.style.transition = "ease 2s";
     const btn = document.getElementById('shenrenClick');
     shenren.style.opacity = 1;
     btn.style.opacity = 0;
@@ -52,6 +56,8 @@ zhuangtai.addEventListener('touchstart', function(e) {
 })
 
 zhuangtai.addEventListener('touchend', function(e) {
+    kmLightDiv.style.opacity = 1;
+    kmLightDiv.style.transition = "ease 2s";
     const btn = document.getElementById('zhuangtaiClick');
     zhuangtai.style.opacity = 1;
     btn.style.opacity = 0;
@@ -75,6 +81,8 @@ meihua.addEventListener('touchstart', function(e) {
 })
 
 meihua.addEventListener('touchend', function(e) {
+    kmLightDiv.style.opacity = 1;
+    kmLightDiv.style.transition = "ease 2s";
     const btn = document.getElementById('meihuaClick');
     meihua.style.opacity = 1;
     btn.style.opacity = 0;
@@ -97,6 +105,8 @@ guangling.addEventListener('touchstart', function(e) {
 })
 
 guangling.addEventListener('touchend', function(e) {
+    kmLightDiv.style.opacity = 1;
+    kmLightDiv.style.transition = "ease 2s";
     const btn = document.getElementById('guanglingClick');
     guangling.style.opacity = 1;
     btn.style.opacity = 0;
@@ -120,6 +130,8 @@ nichang.addEventListener('touchstart', function(e) {
 })
 
 nichang.addEventListener('touchend', function(e) {
+    kmLightDiv.style.opacity = 1;
+    kmLightDiv.style.transition = "ease 2s";
     const btn = document.getElementById('nichangClick');
     nichang.style.opacity = 1;
     btn.style.opacity = 0;
@@ -143,6 +155,8 @@ yueer.addEventListener('touchstart', function(e) {
 })
 
 yueer.addEventListener('touchend', function(e) {
+    kmLightDiv.style.opacity = 1;
+    kmLightDiv.style.transition = "ease 2s";
     const btn = document.getElementById('yueerClick');
     yueer.style.opacity = 1;
     btn.style.opacity = 0;
@@ -166,6 +180,8 @@ xiaoxiang.addEventListener('touchstart', function(e) {
 })
 
 xiaoxiang.addEventListener('touchend', function(e) {
+    kmLightDiv.style.opacity = 1;
+    kmLightDiv.style.transition = "ease 2s";
     const btn = document.getElementById('xiaoxiangClick');
     xiaoxiang.style.opacity = 1;
     btn.style.opacity = 0;
@@ -178,85 +194,99 @@ xiaoxiang.addEventListener('touchend', function(e) {
 
 // 乐器交互
 // 萧
-xiao.addEventListener('touchstart',function(e) {
+xiao.addEventListener('touchstart', function(e) {
     console.log("按下去辽");
     const audio = document.getElementById('xiaomp3');
     audio.play();
     e.preventDefault();
 })
-xiao.addEventListener('touchend', function (e) {
-    const audio = document.getElementById('xiaomp3');
-    audio.pause();
-    e.preventDefault();
-})
-// 阮
-ruan.addEventListener('touchstart', function (e) {
+xiao.addEventListener('touchend', function(e) {
+        kmLightDiv.style.opacity = 1;
+        kmLightDiv.style.transition = "ease 2s";
+        const audio = document.getElementById('xiaomp3');
+        audio.pause();
+        e.preventDefault();
+    })
+    // 阮
+ruan.addEventListener('touchstart', function(e) {
     console.log("按下去辽");
     const audio = document.getElementById('ruanmp3');
     audio.play();
     e.preventDefault();
 })
-ruan.addEventListener('touchend', function (e) {
-    const audio = document.getElementById('ruanmp3');
-    audio.pause();
-    e.preventDefault();
-})
-// 古琴
-guqin.addEventListener('touchstart', function (e) {
+ruan.addEventListener('touchend', function(e) {
+        kmLightDiv.style.opacity = 1;
+        kmLightDiv.style.transition = "ease 2s";
+        const audio = document.getElementById('ruanmp3');
+        audio.pause();
+        e.preventDefault();
+    })
+    // 古琴
+guqin.addEventListener('touchstart', function(e) {
     console.log("按下去辽");
     const audio = document.getElementById('guqinmp3');
     audio.play();
     e.preventDefault();
 })
-guqin.addEventListener('touchend', function (e) {
-    const audio = document.getElementById('guqinmp3');
-    audio.pause();
-    e.preventDefault();
-})
-// 箜篌
-konghou.addEventListener('touchstart', function (e) {
+guqin.addEventListener('touchend', function(e) {
+        kmLightDiv.style.opacity = 1;
+        kmLightDiv.style.transition = "ease 2s";
+        const audio = document.getElementById('guqinmp3');
+        audio.pause();
+        e.preventDefault();
+    })
+    // 箜篌
+konghou.addEventListener('touchstart', function(e) {
     console.log("按下去辽");
     const audio = document.getElementById('konghoump3');
     audio.play();
     e.preventDefault();
 })
-konghou.addEventListener('touchend', function (e) {
-    const audio = document.getElementById('konghoump3');
-    audio.pause();
-    e.preventDefault();
-})
-// 笙
-sheng.addEventListener('touchstart', function (e) {
+konghou.addEventListener('touchend', function(e) {
+        kmLightDiv.style.opacity = 1;
+        kmLightDiv.style.transition = "ease 2s";
+        const audio = document.getElementById('konghoump3');
+        audio.pause();
+        e.preventDefault();
+    })
+    // 笙
+sheng.addEventListener('touchstart', function(e) {
     console.log("按下去辽");
     const audio = document.getElementById('shengmp3');
     audio.play();
     e.preventDefault();
 })
-sheng.addEventListener('touchend', function (e) {
-    const audio = document.getElementById('shengmp3');
-    audio.pause();
-    e.preventDefault();
-})
-// 埙
-xun.addEventListener('touchstart', function (e) {
+sheng.addEventListener('touchend', function(e) {
+        kmLightDiv.style.opacity = 1;
+        kmLightDiv.style.transition = "ease 2s";
+        const audio = document.getElementById('shengmp3');
+        audio.pause();
+        e.preventDefault();
+    })
+    // 埙
+xun.addEventListener('touchstart', function(e) {
     console.log("按下去辽");
     const audio = document.getElementById('xunmp3');
     audio.play();
     e.preventDefault();
 })
-xun.addEventListener('touchend', function (e) {
-    const audio = document.getElementById('xunmp3');
-    audio.pause();
-    e.preventDefault();
-})
-// 编钟
-bianzhong.addEventListener('touchstart', function (e) {
+xun.addEventListener('touchend', function(e) {
+        kmLightDiv.style.opacity = 1;
+        kmLightDiv.style.transition = "ease 2s";
+        const audio = document.getElementById('xunmp3');
+        audio.pause();
+        e.preventDefault();
+    })
+    // 编钟
+bianzhong.addEventListener('touchstart', function(e) {
     console.log("按下去辽");
     const audio = document.getElementById('bianzhongmp3');
     audio.play();
     e.preventDefault();
 })
-bianzhong.addEventListener('touchend', function (e) {
+bianzhong.addEventListener('touchend', function(e) {
+    kmLightDiv.style.opacity = 1;
+    kmLightDiv.style.transition = "ease 2s";
     const audio = document.getElementById('bianzhongmp3');
     audio.pause();
     e.preventDefault();
