@@ -167,6 +167,7 @@
     left: 181px;
     top: 525px;
     height: auto;
+    pointer-events: none;
     z-index: 10000;
 }
 
@@ -174,7 +175,7 @@
     position: absolute;
     pointer-events: none;
     width: 918px;
-    height: 1743px;
+    height: 1742px;
     left: 35px;
     top: 0;
     z-index: 1;
@@ -230,7 +231,7 @@
     height: 8%;
     box-shadow: none !important;
     width: auto;
-    z-index: 1000;
+    z-index: 999;
     animation: konghouhands-group 3s infinite normal;
 }
 
@@ -241,7 +242,7 @@
     height: 8%;
     box-shadow: none !important;
     width: auto;
-    z-index: 1000000;
+    z-index: 800;
 }
 
 .secondGroup {

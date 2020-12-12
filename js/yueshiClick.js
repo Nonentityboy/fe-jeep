@@ -45,7 +45,7 @@ konghouhandsCutsDiv.addEventListener('touchmove', function(e) {
     let lastRight = xx + moveX;
     konghouUnLight.style.display = 'none';
     konghouLight.style.opacity = 1;
-    konghouLight.style.transition = 'ease 1s';
+    konghouLight.style.transition = 'ease 3s';
     //防止超出父元素范围
     if (lastRight < 0) lastRight = 0;
     if (lastRight > maxRightKongHou) lastRight = maxRightKongHou;
@@ -58,11 +58,16 @@ konghouhandsCutsDiv.addEventListener('touchmove', function(e) {
 
 // 手指移动结束
 konghouhandsCutsDiv.addEventListener('touchend', function(e) {
+    secondGroupDiv.style.opacity = 0;
+    secondGroupDiv.style.transition = 'ease 6s';
+    threeGroupDiv.style.display = "block";
     setTimeout(() => {
         const audio = document.getElementById('konghouhandsCutAudio');
         audio.pause();
         secondGroupDiv.style.display = "none";
-        threeGroupDiv.style.display = "block";
+
+        threeGroupDiv.style.opacity = 1;
+        threeGroupDiv.style.transition = 'ease 6s';
     }, 6000);
 
     e.preventDefault();

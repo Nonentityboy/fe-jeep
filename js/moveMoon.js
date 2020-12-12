@@ -129,6 +129,18 @@ function moveStartGroup() {
         // 孔明灯不让跳转
         // kmLightDiv.style.opacity = 1;
         // kmLightDiv.style.transition = "ease 2s";
+
+
         musicTestDetailDiv.style.display = 'block';
+
     }, 1000);
+
+    setTimeout(() => {
+        musicTestDetailDiv.style.opacity = 1;
+        musicTestDetailDiv.style.transition = 'ease 6s';
+
+        headerTextGroupTwoDiv.style.opacity = 1;
+        headerTextGroupTwoDiv.style.transition = 'ease 6s';
+
+    }, 1100);
 }
