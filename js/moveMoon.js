@@ -105,19 +105,19 @@ function moveStartGroup() {
 
     const moonDiv = document.getElementById('footer-bottom-middle');
     // 第一幕第二组的三组星星乐曲特效效果
-    const starGroup = [
-        '',
-        document.getElementById('starGroup1'),
-        document.getElementById('starGroup2'),
-        document.getElementById('starGroup3')
-    ]
+    // const starGroup = [
+    //     '',
+    //     document.getElementById('starGroup1'),
+    //     document.getElementById('starGroup2'),
+    //     document.getElementById('starGroup3')
+    // ]
 
-    for (let i = 1; i < 7; i++) {
-        setTimeout(() => {
-            starGroup[`${Math.ceil(i/2)}`].style.opacity = i % 2;
-            starGroup[`${Math.ceil(i/2)}`].style.transition = "ease 1s";
-        }, i * 1000);
-    }
+    // for (let i = 1; i < 7; i++) {
+    //     setTimeout(() => {
+    //         starGroup[`${Math.ceil(i/2)}`].style.opacity = i % 2;
+    //         starGroup[`${Math.ceil(i/2)}`].style.transition = "ease 1s";
+    //     }, i * 1000);
+    // }
 
     // 控制孔明灯 及第一幕第二组
     setTimeout(() => {
@@ -128,5 +128,5 @@ function moveStartGroup() {
         kmLightDiv.style.opacity = 1;
         kmLightDiv.style.transition = "ease 2s";
         musicTestDetailDiv.style.display = 'block';
-    }, 7000);
+    }, 1000);
 }
