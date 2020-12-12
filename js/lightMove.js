@@ -18,6 +18,9 @@ const starfieldDiv = document.getElementById('starfield');
 // const wholemusician = document.getElementById("wholemusician");
 // const wholemusician = document.getElementsByClassName("wholemusician");
 
+const musiciansDiv = document.getElementById('musicians')
+
+const konghouMusicianDiv = document.getElementById('konghouMusician')
 
 const maxLeft = cutHandsDiv.offsetLeft - body.offsetLeft;
 
@@ -86,25 +89,31 @@ cutHandsDiv.addEventListener('touchend', function() {
 
 
 function TwoAnimationPic() {
+
+    konghouMusicianDiv.style.display = "block";
     const starGroup = [
-        '',
         document.getElementById('musician1'),
         document.getElementById('musician2'),
         document.getElementById('musician3'),
-        document.getElementById('musician4')
     ]
 
-    for (let i = 1; i < 9; i++) {
+    for (let i = 0; i < 3; i++) {
         setTimeout(() => {
-            starGroup[`${Math.ceil(i / 2)}`].style.opacity = i % 2;
-            starGroup[`${Math.ceil(i / 2)}`].style.transition = "ease 1s";
-        }, i * 1000);
+            starGroup[i].style.display = 'block';
+        }, i * 1500);
+    }
+
+    for (let i = 0; i < 3; i++) {
+        setTimeout(() => {
+            starGroup[i].style.display = 'none';
+        }, 8000 + i * 1500);
     }
 
     setTimeout(() => {
         const secondGroup = document.getElementById('secondGroup');
         secondGroup.style.display = 'block';
         montainDiv.style.display = 'none';
-    }, 8800);
+        konghouMusicianDiv.style.display = "none";
+    }, 9500);
 
 }
