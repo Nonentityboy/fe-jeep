@@ -67,10 +67,12 @@ cutHandsDiv.addEventListener('touchend', function() {
         container.style.display = "none";
         music_text.style.display = "none";
         kmlight.style.display = "none";
-        montainDiv.style.display = "none";
+        montainDiv.style.opacity = 0;
+        montainDiv.style.transition = "ease 2s";
         fixStarDiv.style.display = "none";
 
         toolDiv.style.background = "url('https://s3.ax1x.com/2020/12/09/r9F52d.png') bottom center no-repeat #efeff4";
+        toolDiv.style.transition = "ease 3s";
         toolDiv.style.backgroundSize = "100% 100%";
 
         toolDiv.style.width = "100%";
@@ -89,6 +91,8 @@ cutHandsDiv.addEventListener('touchend', function() {
 
 
 function TwoAnimationPic() {
+    const secondGroup = document.getElementById('secondGroup');
+    secondGroup.style.display = 'block';
 
     konghouMusicianDiv.style.display = "block";
     const starGroup = [
@@ -110,8 +114,9 @@ function TwoAnimationPic() {
     }
 
     setTimeout(() => {
-        const secondGroup = document.getElementById('secondGroup');
-        secondGroup.style.display = 'block';
+        secondGroup.style.opacity = 1;
+        secondGroup.style.transition = 'ease 5s';
+
         montainDiv.style.display = 'none';
         konghouMusicianDiv.style.display = "none";
     }, 9500);
