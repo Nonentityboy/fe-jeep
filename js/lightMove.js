@@ -15,6 +15,8 @@ const fixStarDiv = document.getElementById("fixStar");
 const toolDiv = document.getElementById("tool");
 
 const starfieldDiv = document.getElementById('starfield');
+
+const framePaopaoDiv = document.getElementById('frame-paopao');
 // const wholemusician = document.getElementById("wholemusician");
 // const wholemusician = document.getElementsByClassName("wholemusician");
 
@@ -78,6 +80,7 @@ cutHandsDiv.addEventListener('touchend', function() {
 
 
         starfieldDiv.style.display = "block";
+        framePaopaoDiv.style.display = 'block';
     }, 1000);
     setTimeout(() => {
         montainDiv.style.opacity = 0;
@@ -117,8 +120,18 @@ function TwoAnimationPic() {
         secondGroup.style.opacity = 1;
         secondGroup.style.transition = 'ease 5s';
 
+        starfieldDiv.style.opacity = 0;
+        starfieldDiv.style.transition = 'ease 5s';
+        framePaopaoDiv.style.opacity = 0;
+        framePaopaoDiv.style.transition = 'ease 5s';
+
         montainDiv.style.display = 'none';
         konghouMusicianDiv.style.display = "none";
     }, 9500);
+
+    setTimeout(() => {
+        starfieldDiv.style.display = 'none';
+        framePaopaoDiv.style.display = 'none';
+    }, 14500);
 
 }
