@@ -104,6 +104,18 @@ body {
     left: 145px;
     width: 136px;
     height: 136px;
+    animation: header-bottom-text-group-three-hands-time 3s infinite normal;
+}
+
+@keyframes header-bottom-text-group-three-hands-time {
+    0% {
+        opacity: 1;
+        top: 251px;
+    }
+    100% {
+        opacity: 0;
+        top: 500px;
+    }
 }
 
 .footer {

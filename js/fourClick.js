@@ -4,7 +4,7 @@ const threeGroupInfoDiv = document.getElementById('threeGroup');
 
 headerBottomHandsDiv.addEventListener('touchend', function(e) {
     threeGroupInfoDiv.style.display = "none";
-    toolDiv.style.background = "url('https://s3.ax1x.com/2020/12/12/rV3JFP.png') no-repeat #efeff4";
+    toolDiv.style.background = "url('https://s3.ax1x.com/2020/12/13/rZWKYt.png') no-repeat #efeff4";
     toolDiv.style.backgroundSize = "100%";
     toolDiv.style.display = "block"
     toolDiv.style.width = "100%";
