@@ -67,8 +67,6 @@ cutHandsDiv.addEventListener('touchend', function() {
         container.style.display = "none";
         music_text.style.display = "none";
         kmlight.style.display = "none";
-        montainDiv.style.opacity = 0;
-        montainDiv.style.transition = "ease 2s";
         fixStarDiv.style.display = "none";
 
         toolDiv.style.background = "url('https://s3.ax1x.com/2020/12/09/r9F52d.png') bottom center no-repeat #efeff4";
@@ -82,6 +80,8 @@ cutHandsDiv.addEventListener('touchend', function() {
         starfieldDiv.style.display = "block";
     }, 1000);
     setTimeout(() => {
+        montainDiv.style.opacity = 0;
+        montainDiv.style.transition = "ease 2s";
         // 第二幕动效效果图
         TwoAnimationPic();
 
