@@ -6,6 +6,14 @@ const guangling = document.getElementById('guangling');
 const nichang = document.getElementById('nichang');
 const yueer = document.getElementById('yueer');
 const xiaoxiang = document.getElementById('xiaoxiang');
+//获取乐器点击事件元素
+const xiao = document.getElementById('xiao');
+const ruan = document.getElementById('ruan');
+const guqin = document.getElementById('guqin');
+const konghou = document.getElementById('konghou');
+const sheng = document.getElementById('sheng');
+const xun = document.getElementById('xun');
+const bianzhong = document.getElementById('bianzhong');
 
 //添加事件监听函数
 //神人畅
@@ -164,6 +172,92 @@ xiaoxiang.addEventListener('touchend', function(e) {
 
     //暂停
     const audio = document.getElementById('xiaoxiangshuiyun')
+    audio.pause();
+    e.preventDefault();
+})
+
+// 乐器交互
+// 萧
+xiao.addEventListener('touchstart',function(e) {
+    console.log("按下去辽");
+    const audio = document.getElementById('xiaomp3');
+    audio.play();
+    e.preventDefault();
+})
+xiao.addEventListener('touchend', function (e) {
+    const audio = document.getElementById('xiaomp3');
+    audio.pause();
+    e.preventDefault();
+})
+// 阮
+ruan.addEventListener('touchstart', function (e) {
+    console.log("按下去辽");
+    const audio = document.getElementById('ruanmp3');
+    audio.play();
+    e.preventDefault();
+})
+ruan.addEventListener('touchend', function (e) {
+    const audio = document.getElementById('ruanmp3');
+    audio.pause();
+    e.preventDefault();
+})
+// 古琴
+guqin.addEventListener('touchstart', function (e) {
+    console.log("按下去辽");
+    const audio = document.getElementById('guqinmp3');
+    audio.play();
+    e.preventDefault();
+})
+guqin.addEventListener('touchend', function (e) {
+    const audio = document.getElementById('guqinmp3');
+    audio.pause();
+    e.preventDefault();
+})
+// 箜篌
+konghou.addEventListener('touchstart', function (e) {
+    console.log("按下去辽");
+    const audio = document.getElementById('konghoump3');
+    audio.play();
+    e.preventDefault();
+})
+konghou.addEventListener('touchend', function (e) {
+    const audio = document.getElementById('konghoump3');
+    audio.pause();
+    e.preventDefault();
+})
+// 笙
+sheng.addEventListener('touchstart', function (e) {
+    console.log("按下去辽");
+    const audio = document.getElementById('shengmp3');
+    audio.play();
+    e.preventDefault();
+})
+sheng.addEventListener('touchend', function (e) {
+    const audio = document.getElementById('shengmp3');
+    audio.pause();
+    e.preventDefault();
+})
+// 埙
+xun.addEventListener('touchstart', function (e) {
+    console.log("按下去辽");
+    const audio = document.getElementById('xunmp3');
+    audio.play();
+    e.preventDefault();
+})
+xun.addEventListener('touchend', function (e) {
+    const audio = document.getElementById('xunmp3');
+    audio.pause();
+    e.preventDefault();
+})
+// 编钟
+bianzhong.addEventListener('touchstart', function (e) {
+    console.log("按下去辽");
+    const audio = document.getElementById('bianzhongmp3');
+    audio.play();
+    e.preventDefault();
+})
+bianzhong.addEventListener('touchend', function (e) {
+    const audio = document.getElementById('bianzhongmp3');
     audio.pause();
     e.preventDefault();
 })

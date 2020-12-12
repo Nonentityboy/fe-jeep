@@ -53,47 +53,35 @@ body {
 }
 
 .header-bottom-text-group-three {
-    margin-top: 0px;
     position: absolute;
-    top: 80px;
-    left: 130px;
-    width: auto;
-    height: auto;
-    max-width: 55%;
-    max-height: 95%;
+    top: 41px;
+    left: 238px;
+    width: 550px;
+    height: 140px;
 }
 
 .header-bottom-text-group-three-left {
-    margin-top: 0px;
     position: absolute;
-    top: -11px;
-    left: -17px;
-    width: auto;
-    height: auto;
-    max-width: 25%;
-    max-height: 25%;
+    top: 0;
+    left: 27px;
+    width: 323px;
+    height: 406px;
 }
 
 .header-bottom-text-group-three-bottom {
-    margin-top: 250px;
     position: absolute;
-    top: -12px;
-    left: 55px;
-    width: auto;
-    height: auto;
-    max-width: 25%;
-    max-height: 25%;
+    top: 295px;
+    left: 83px;
+    width: 44px;
+    height: 361px;
 }
 
 .header-bottom-text-group-three-hands {
-    margin-top: 250px;
     position: absolute;
-    top: 80px;
-    left: 85px;
-    width: auto;
-    height: auto;
-    max-width: 15%;
-    max-height: 15%;
+    top: 251px;
+    left: 145px;
+    width: 136px;
+    height: 136px;
 }
 
 .footer {
