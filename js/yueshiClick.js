@@ -1,5 +1,5 @@
 // 获取图片节点
-const konghouhandsCutsDiv = document.getElementById('konghouhands')
+const konghouhandsCutsDiv = document.getElementById('konghouhandsCut')
 const textjikangimg = document.getElementById('jikangimg');
 const textruanjiimg = document.getElementById('ruanjiimg');
 const textboyaimg = document.getElementById('boyaimg');
@@ -14,7 +14,10 @@ const secondGroupDiv = document.getElementById('secondGroup');
 
 const maxRightKongHou = konghouhandsCutsDiv.offsetRight - body.offsetRight;
 
-console.log(maxRightKongHou)
+
+const konghouUnLight = document.getElementById('konghouUnLight');
+const konghouLight = document.getElementById('konghouLight');
+
 let startXX;
 let xx;
 
@@ -23,6 +26,15 @@ konghouhandsCutsDiv.addEventListener('touchstart', function(e) {
         // 获取手指初始坐标 
     startXX = e.targetTouches[0].pageX;
     xx = this.offsetRight;
+
+
+
+    konghouLight.style.display = 'block';
+
+
+    const audio = document.getElementById('konghouhandsCutAudio');
+    audio.play();
+
     this.style.boxShadow = '0 0 15px rgba(0, 0, 0, .6)';
 });
 
@@ -31,7 +43,9 @@ konghouhandsCutsDiv.addEventListener('touchmove', function(e) {
     let moveX = e.targetTouches[0].pageX - startXX;
 
     let lastRight = xx + moveX;
-
+    konghouUnLight.style.display = 'none';
+    konghouLight.style.opacity = 1;
+    konghouLight.style.transition = 'ease 1s';
     //防止超出父元素范围
     if (lastRight < 0) lastRight = 0;
     if (lastRight > maxRightKongHou) lastRight = maxRightKongHou;
@@ -44,15 +58,19 @@ konghouhandsCutsDiv.addEventListener('touchmove', function(e) {
 
 // 手指移动结束
 konghouhandsCutsDiv.addEventListener('touchend', function(e) {
-    secondGroupDiv.style.display = "none";
-    threeGroupDiv.style.display = "block";
+    setTimeout(() => {
+        const audio = document.getElementById('konghouhandsCutAudio');
+        audio.pause();
+        secondGroupDiv.style.display = "none";
+        threeGroupDiv.style.display = "block";
+    }, 6000);
+
     e.preventDefault();
 })
 
 
 // 嵇康铜盘
 textjikangimg.addEventListener('touchstart', function(e) {
-    console.log(11111)
     const btn = document.getElementById('jikangimgtongpan');
     btn.style.opacity = 1;
     e.preventDefault();

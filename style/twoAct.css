@@ -180,6 +180,17 @@
     height: auto;
 }
 
+.boxtongpan .konghouLight {
+    position: absolute;
+    pointer-events: none;
+    width: 80%;
+    left: 15%;
+    top: 5%;
+    z-index: 1;
+    opacity: 0;
+    height: auto;
+}
+
 .musicians .konghou {
     position: absolute;
     pointer-events: none;
@@ -220,6 +231,16 @@
     width: auto;
     z-index: 1000;
     animation: konghouhands-group 3s infinite normal;
+}
+
+.konghouhandsCutUnMove {
+    position: absolute;
+    left: 40%;
+    bottom: 42%;
+    height: 8%;
+    box-shadow: none !important;
+    width: auto;
+    z-index: 1000000;
 }
 
 .secondGroup {
