@@ -7,8 +7,13 @@ body {
 body {
     /*页面背景图 */
     font-family: sans-serif;
-    background: url('https://s3.ax1x.com/2020/11/30/DRZE80.png') no-repeat;
+    background-image: linear-gradient( #1e2d59, #192e79, #0069aa);
+    /* background: url('https://s3.ax1x.com/2020/11/30/DRZE80.png') no-repeat; */
     background-size: 100%;
+}
+
+.tool {
+    display: none;
 }
 
 .container .header {
@@ -276,13 +281,6 @@ z-index: 15;
         opacity: 0;
         top: 860px;
     }
-}
-
-.bottom_sign {
-    width: 90%;
-    position: absolute;
-    bottom: 50px;
-    left: 5%;
 }
 
 .size {

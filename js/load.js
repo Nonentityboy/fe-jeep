@@ -1,6 +1,12 @@
 window.addEventListener("load", function(event) {
     console.log("文档以及它包含的资源都已加载完成");
 
+    const zeroGroup = document.getElementById('zeroGroup');
+    zeroGroup.style.display = 'none';
+
+    const oneGroupDiv = document.getElementById('tool');
+    oneGroupDiv.style.display = 'block';
+
     const pageText = [
         document.getElementById('header-bottom-text-one'),
         document.getElementById('header-bottom-text-two'),

@@ -1,0 +1,74 @@
+.bottom_sign {
+    width: 90%;
+    position: absolute;
+    bottom: 50px;
+    left: 5%;
+    z-index: 10;
+}
+
+.loading-rabbit-img {
+    width: 142px;
+    height: 88px;
+    top: 510px;
+    position: relative;
+    top: -297px;
+}
+
+@keyframes trans-rabbit {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.trans-rabbit {
+    position: absolute;
+    left: calc(50% - 39px);
+    top: calc(50% - 75px);
+    width: fit-content;
+    z-index: 999;
+    animation: trans-rabbit 8s linear infinite normal;
+}
+
+.loading-moon-img {
+    position: absolute;
+    left: 250px;
+    top: 586px;
+    width: 505px;
+    height: 585px;
+}
+
+.loading-moon-title {
+    position: absolute;
+    width: 287px;
+    height: 62px;
+    left: 375px;
+    top: 785px;
+    z-index: 1000;
+}
+
+.loading-moon-text {
+    position: absolute;
+    width: 107px;
+    height: 41px;
+    left: 379px;
+    top: 854px;
+    z-index: 1000;
+    margin-left: 40px;
+}
+
+.loading-moon-dian-div {
+    position: absolute;
+}
+
+.loading-moon-dian {
+    position: relative;
+    width: 10px;
+    height: 14px;
+    left: 526px;
+    top: 874px;
+    z-index: 1000;
+    opacity: 0;
+}
