@@ -18,6 +18,10 @@
     display: none;
 }
 
+.juankuan {
+    display: none;
+}
+
 .juankuan .juan {
     position: absolute;
     width: 54%;

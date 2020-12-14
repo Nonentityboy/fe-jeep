@@ -11,6 +11,7 @@ headerBottomHandsDiv.addEventListener('touchend', function(e) {
     toolDiv.style.backgroundSize = "100%";
     toolDiv.style.display = "block"
     fourGroupButtonDiv.style.display = "block";
+    juankuan.style.display = "block";
     toolDiv.style.width = "100%";
     toolDiv.style.height = "7260px";
     e.preventDefault();
