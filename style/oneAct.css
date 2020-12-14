@@ -131,20 +131,20 @@ body {
 
 .footer-bottom-middle :active {
     position: absolute;
-    width: 395px;
+    width: 40.64%;
     height: auto;
-    top: 1239px;
-    left: 292px;
+    bottom: 2.89%;
+    left: 30.04%;
     box-shadow: none !important;
     z-index: 0;
 }
 
 .footer-bottom-middle {
     position: absolute;
-    width: 395px;
+    width: 40.64%;
     height: auto;
-    top: 1239px;
-    left: 292px;
+    bottom: 2.89%;
+    left: 30.04%;
     box-shadow: none !important;
     z-index: 0;
 }
