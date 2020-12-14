@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./style/fourAct.css">
     <link rel="stylesheet" href="./style/paopao.css">
     <link rel="stylesheet" href="./style/zeroAct.css">
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
 </head>
 
 <body>
@@ -349,9 +350,12 @@
         <!-- <div class="fourGroup">
             <img src="https://s3.ax1x.com/2020/12/12/rV3JFP.png" alt="第四幕背景" class="fourGroup">
         </div> -->
-        <div class="button">
-            <button class="btn"></button>
-        </div>
+
+        <wx-open-launch-weapp id="weapp" weappid="wxfcaee0e9f1b649ec" path="/pages/banner/banner">
+            <!-- <div class="button"> -->
+                <button class="btnXcx" id="fourGroupButton"></button>
+            <!-- </div> -->
+        </wx-open-launch-weapp>
     </div>
     <!-- 粒子效果 -->
     <div class="starfield" id="starfield">
@@ -985,6 +989,18 @@
             s.parentNode.insertBefore(mta, s);
         })();
     </script>
+    <script>
+        wx.config({
+          debug: true, // 调试时可开启
+          appId: 'wxfcaee0e9f1b649ec', 
+          timestamp: 0, // 必填，填任意数字即可
+          nonceStr: 'nonceStr', // 必填，填任意非空字符串即可
+          signature: 'signature', // 必填，填任意非空字符串即可
+          jsApiList: [], 
+          openTagList:['wx-open-launch-weapp'], // 填入打开小程序的开放标签名
+        })
+      </script>
+      
 </body>
 
 

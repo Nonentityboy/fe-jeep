@@ -44,6 +44,7 @@
     display: block;
     margin: 0 auto;
     width: 700px;
+    z-index: 999;
 }
 
 .loading-moon-title {
