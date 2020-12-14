@@ -17,7 +17,7 @@ const hands = document.getElementById('hands');
 const handsAnimation = document.getElementById('hands-animation');
 
 const maxTop1 = headerTextDiv.offsetTop;
-const maxTop2 = middleTextDiv.offsetTop;
+const maxTop2 = 900;
 const maxTop3 = hands.offsetTop;
 
 // 手指触摸 
@@ -86,7 +86,7 @@ div.addEventListener('touchmove', function(e) {
     this.style.top = lastTop + 'px';
 
     headerTextDiv.style.top = maxTop1 + moveY + 'px';
-    middleTextDiv.style.top = maxTop2 + moveY + 'px';
+    middleTextDiv.style.top = Number(maxTop2 + moveY) + 'px';
     hands.style.top = maxTop3 + moveY + 'px';
     // 控制台 打印位置
     // console.log('顶部最大高度' + maxTop)

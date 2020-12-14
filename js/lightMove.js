@@ -71,7 +71,9 @@ cutHandsDiv.addEventListener('touchend', function() {
         kmlight.style.display = "none";
         fixStarDiv.style.display = "none";
 
-        toolDiv.style.background = "url('https://s3.ax1x.com/2020/12/09/r9F52d.png') bottom center no-repeat #efeff4";
+
+        // toolDiv.style.background = "url('https://s3.ax1x.com/2020/12/09/r9F52d.png') bottom center no-repeat #efeff4";
+        toolDiv.style.backgroundImage = 'linear-gradient( #221835, #23244d 25%, #1c2a54)'
         toolDiv.style.transition = "ease 3s";
         toolDiv.style.backgroundSize = "100% 100%";
 

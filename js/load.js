@@ -1,6 +1,10 @@
 window.addEventListener("load", function(event) {
     console.log("文档以及它包含的资源都已加载完成");
 
+
+});
+
+setTimeout(() => {
     const zeroGroup = document.getElementById('zeroGroup');
     zeroGroup.style.display = 'none';
 
@@ -15,9 +19,8 @@ window.addEventListener("load", function(event) {
 
     for (let i = 0; i < 3; i++) {
         setTimeout(() => {
-            console.log(i)
             pageText[i].style.opacity = 1;
             pageText[i].style.transition = "ease 10s";
         }, i * 1000);
     }
-});
+}, 3000);
