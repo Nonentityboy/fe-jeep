@@ -17,3 +17,23 @@
     box-shadow: none;
     display: none;
 }
+
+.juankuan .juan {
+    position: absolute;
+    width: 54%;
+    height: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.diandengren {
+    position: absolute;
+    width: 22%;
+    height: auto;
+    left: 50%;
+    top: 58%;
+    transform: translateX(-50%);
+}
