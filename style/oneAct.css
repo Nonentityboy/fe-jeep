@@ -39,6 +39,8 @@ body {
     margin-left: 115px;
     position: relative;
     opacity: 1;
+    /* 稍后取消掉 */
+    display: none;
 }
 
 .container .header-bottom-text-one {
