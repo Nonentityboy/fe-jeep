@@ -15,6 +15,9 @@ const sheng = document.getElementById('sheng');
 const xun = document.getElementById('xun');
 const bianzhong = document.getElementById('bianzhong');
 
+// 获取乐器页面头
+const threeGroupTopDiv = document.getElementById('threeGroupTop')
+
 const kmLightDiv = document.getElementById('km-light');
 
 //添加事件监听函数
@@ -198,6 +201,7 @@ xiao.addEventListener('touchstart', function(e) {
     console.log("按下去辽");
     const audio = document.getElementById('xiaomp3');
     audio.play();
+    threeGroupTopDiv.style.display = 'block';
     e.preventDefault();
 })
 xiao.addEventListener('touchend', function(e) {
@@ -209,6 +213,7 @@ xiao.addEventListener('touchend', function(e) {
     })
     // 阮
 ruan.addEventListener('touchstart', function(e) {
+    threeGroupTopDiv.style.display = 'block';
     console.log("按下去辽");
     const audio = document.getElementById('ruanmp3');
     audio.play();
@@ -223,6 +228,7 @@ ruan.addEventListener('touchend', function(e) {
     })
     // 古琴
 guqin.addEventListener('touchstart', function(e) {
+    threeGroupTopDiv.style.display = 'block';
     console.log("按下去辽");
     const audio = document.getElementById('guqinmp3');
     audio.play();
@@ -237,6 +243,7 @@ guqin.addEventListener('touchend', function(e) {
     })
     // 箜篌
 konghou.addEventListener('touchstart', function(e) {
+    threeGroupTopDiv.style.display = 'block';
     console.log("按下去辽");
     const audio = document.getElementById('konghoump3');
     audio.play();
@@ -251,6 +258,7 @@ konghou.addEventListener('touchend', function(e) {
     })
     // 笙
 sheng.addEventListener('touchstart', function(e) {
+    threeGroupTopDiv.style.display = 'block';
     console.log("按下去辽");
     const audio = document.getElementById('shengmp3');
     audio.play();
@@ -265,6 +273,7 @@ sheng.addEventListener('touchend', function(e) {
     })
     // 埙
 xun.addEventListener('touchstart', function(e) {
+    threeGroupTopDiv.style.display = 'block';
     console.log("按下去辽");
     const audio = document.getElementById('xunmp3');
     audio.play();
@@ -279,6 +288,7 @@ xun.addEventListener('touchend', function(e) {
     })
     // 编钟
 bianzhong.addEventListener('touchstart', function(e) {
+    threeGroupTopDiv.style.display = 'block';
     console.log("按下去辽");
     const audio = document.getElementById('bianzhongmp3');
     audio.play();

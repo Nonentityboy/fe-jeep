@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="./style/fourAct.css">
     <link rel="stylesheet" href="./style/paopao.css">
     <link rel="stylesheet" href="./style/zeroAct.css">
+    <link rel="stylesheet" href="./style/threeHalfGroup.css">
+    <meta name="viewport" content="user-scalable=no" />
+
     <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js">
     </script>
 </head>
@@ -21,7 +24,7 @@
     <div id="zeroGroup" style="height: 100%;position: relative;">
         <div class="loading-moon">
             <div class="trans-rabbit">
-                <img src="https://s3.ax1x.com/2020/12/13/rZhuxf.png" class="loading-rabbit-img">
+                <img src="./img/rabbit.gif" class="loading-rabbit-img">
             </div>
             <img src="https://s3.ax1x.com/2020/12/13/reOZlQ.png" class="loading-moon-title">
             <img src="https://s3.ax1x.com/2020/12/13/reOlkV.png" class="loading-moon-text">
@@ -176,10 +179,10 @@
                     <img src="https://s3.ax1x.com/2020/12/08/rSfVKK.png" id="jikangimg" class="jikangimg" alt="嵇康">
                 </div>
                 <div class="boxtongpan">
-                    <img src="https://s3.ax1x.com/2020/12/09/r9kZRJ.png" class="konghouhands">
+                    <img src="https://s3.ax1x.com/2020/12/09/r9kZRJ.png" id="konghoubodong" class="konghouhands">
                     <img src="https://s3.ax1x.com/2020/12/12/rVzKI0.png" class="konghou" id="konghouUnLight"
                         alt="konghou">
-                    <img src="https://s3.ax1x.com/2020/12/14/ru2F3t.png" class="konghouLight" id="konghouLight"
+                    <img src="https://s3.ax1x.com/2020/12/15/ruLQje.png" class="konghouLight" id="konghouLight"
                         alt="konghou亮了">
                     <img id="konghouhands" class="konghouhandsCut" src="https://s3.ax1x.com/2020/12/02/DIultK.png">
 
@@ -251,14 +254,26 @@
         </div>
         <!-- 第三幕 -->
         <div id="threeGroup" class="threeGroup">
-            <img class="header-bottom-text-group-three-left" id="header-bottom-text-group-three-left"
-                src="https://s3.ax1x.com/2020/12/08/rSObes.png" alt="中央文字提示第三幕北极星">
             <img class="header-bottom-text-group-three" id="header-bottom-text-group-three"
-                src="https://s3.ax1x.com/2020/12/08/rS7f00.png" alt="中央文字提示第三幕">
-            <img class="header-bottom-text-group-three-bottom" id="header-bottom-text-group-three-bottom"
-                src="https://s3.ax1x.com/2020/12/08/rSXDkq.png" alt="中央文字提示第三幕手势">
-            <img class="header-bottom-text-group-three-hands" id="header-bottom-text-group-three-hands"
-                src="https://s3.ax1x.com/2020/12/08/rSjeNq.png" alt="中央文字提示第三幕手势">
+            src="https://s3.ax1x.com/2020/12/08/rS7f00.png" alt="中央文字提示第三幕">
+            <div id="threeGroupTop" style="display: none;">
+                <img class="header-bottom-text-group-three-left" id="header-bottom-text-group-three-left"
+                    src="https://s3.ax1x.com/2020/12/08/rSObes.png" alt="中央文字提示第三幕北极星">
+                <img class="header-bottom-text-group-three-bottom" id="header-bottom-text-group-three-bottom"
+                    src="https://s3.ax1x.com/2020/12/14/ru4dcn.png" alt="中央文字提示第三幕手势">
+                <img class="header-bottom-text-group-three-hands" id="header-bottom-text-group-three-hands"
+                    src="https://s3.ax1x.com/2020/12/08/rSjeNq.png" alt="中央文字提示第三幕手势">
+                   
+            </div>
+            <img style="    position: fixed;
+            width: 80%;
+            /* height: 80%; */
+            top: 27%;
+            left: 11%;
+            bottom: 0;
+            right: 0;
+            z-index: 2;"
+            src="https://s3.ax1x.com/2020/12/15/ruL3Bd.png" alt="北斗七星连线">
             <!-- 乐器 -->
             <div>
                 <img src="https://s3.ax1x.com/2020/12/09/rCUarR.png" class="xiao" id="xiao" alt="萧">
@@ -266,7 +281,8 @@
                     height: auto;
                     width: 20%;
                     left: -5%;
-                    bottom: 1%;" id="xiao" alt="萧光">
+                    opacity: 0.6;
+                    bottom: 1%;" id="xingxing1" alt="萧光">
                 <audio preload id="xiaomp3" src="http://cms.deyin.org/guoyuezhiduoshao/yueqi/xiao.mp3" hidden
                     controls="controls">
             </div>
@@ -276,7 +292,8 @@
                     width: 30%;
                     height: auto;
                     left: 1%;
-                    bottom: 17%;" id="ruan" alt="阮">
+                    opacity: 0.6;
+                    bottom: 17%;" id="xingxing2" alt="阮">
                 <audio preload id="ruanmp3" src="http://cms.deyin.org/guoyuezhiduoshao/yueqi/ruan.mp3" hidden
                     controls="controls">
             </div>
@@ -286,8 +303,8 @@
                 width: 28%;
                 /* height: 26%; */
                 left: 22%;
-                
-                bottom: 24%;" id="guqin" alt="古琴">
+                opacity: 0.6;
+                bottom: 24%;" id="xingxing3" alt="古琴">
                 <audio preload id="guqinmp3" src="http://cms.deyin.org/guoyuezhiduoshao/yueqi/guqin.mp3" hidden
                     controls="controls">
             </div>
@@ -296,8 +313,9 @@
                 <img src="https://s3.ax1x.com/2020/12/14/rnYu3n.png" style="position: absolute;
                 width: 35%;
                 height: auto;
-                bottom: 33%;
-                left: 38%;" id="konghou" alt="箜篌">
+                bottom: 31%;
+                opacity: 0.6;
+                left: 38%;" id="xingxing4" alt="箜篌">
                 <audio preload id="konghoump3" src="http://cms.deyin.org/guoyuezhiduoshao/yueqi/konghou.mp3" hidden
                     controls="controls">
             </div>
@@ -306,8 +324,9 @@
                 <img src="https://s3.ax1x.com/2020/12/14/rnY3HU.png" style="position: absolute;
                 width: 30%;
                 /* height: 13%; */
-                left: 65%;
-                bottom: 45%;" id="sheng" alt="笙">
+                left: 69%;
+                opacity: 0.6;
+                bottom: 40%;" id="xingxing5" alt="笙">
                 <audio preload id="shengmp3" src="http://cms.deyin.org/guoyuezhiduoshao/yueqi/sheng.mp3" hidden
                     controls="controls">
             </div>
@@ -317,7 +336,8 @@
                 width: 21.47%;
                 height: auto;
                 left: 78%;
-                bottom: 60%;" id="xun" alt="埙">
+                opacity: 0.6;
+                bottom: 60%;" id="xingxing6" alt="埙">
                 <audio preload id="xunmp3" src="http://cms.deyin.org/guoyuezhiduoshao/yueqi/xun.mp3" hidden
                     controls="controls">
             </div>
@@ -327,10 +347,31 @@
                 width: 25.47%;
                 height: auto;
                 left: 43%;
-                bottom: 66%;" id="bianzhong" alt="编钟">
+                opacity: 0.6;
+                bottom: 66%;" id="xingxing7" alt="编钟">
                 <audio preload id="bianzhongmp3" src="http://cms.deyin.org/guoyuezhiduoshao/yueqi/bianqing.mp3" hidden
                     controls="controls">
             </div>
+        </div>
+
+
+        <!-- 第3.5幕 -->
+        <div id="threeHalfGroup" class="threeHalfGroup">
+
+            <img src="https://s3.ax1x.com/2020/12/15/rMQKUJ.png" style=" position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            pointer-events: none;" alt="背景云层">
+            <img style=" position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            pointer-events: none;" src="https://s3.ax1x.com/2020/12/15/rMQ181.png" alt="背景灯">
         </div>
 
         <!-- 第四幕 -->
@@ -338,24 +379,15 @@
             <img src="https://s3.ax1x.com/2020/12/12/rV3JFP.png" alt="第四幕背景" class="fourGroup">
         </div> -->
 
-        <wx-open-launch-weapp id="weapp" weappid="wxfcaee0e9f1b649ec" path="/pages/banner/banner">
+        <!-- <wx-open-launch-weapp id="weapp" weappid="wxfcaee0e9f1b649ec" path="/pages/banner/banner"> -->
             <!-- <div class="button"> -->
-                <button class="btnXcx" id="fourGroupButton"></button>
+                <!-- <button class="btnXcx" id="fourGroupButton"></button> -->
             <!-- </div> -->
-        </wx-open-launch-weapp>
+        <!-- </wx-open-launch-weapp> -->
         <!-- <div class="button">
             <button class="btn"></button>
         </div> -->
 
-
-        <div class="juankuan" id="juankuan"> 
-            <img src="https://s3.ax1x.com/2020/12/14/ruBcM4.png" class="juan" alt="捐款栏">
-            <div>
-                <a href="https://gongyi.qq.com/succor/detail.htm?id=225681">
-                    <img src="https://s3.ax1x.com/2020/12/14/ru0uNV.png" class="diandengren" alt="国乐电灯人">
-                </a>
-            </div>
-        </div>
 
     </div>
     <!-- 粒子效果 -->

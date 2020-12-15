@@ -1,5 +1,8 @@
 // 获取图片节点
-const konghouhandsCutsDiv = document.getElementById('konghouhandsCut')
+const konghouhandsCutsDiv = document.getElementById('konghouhandsCut');
+const konghouhandsDiv = document.getElementById('konghouhands');
+const konghouhandsbodongDiv = document.getElementById('konghoubodong');
+
 const textjikangimg = document.getElementById('jikangimg');
 const textruanjiimg = document.getElementById('ruanjiimg');
 const textboyaimg = document.getElementById('boyaimg');
@@ -22,8 +25,7 @@ let startXX;
 let xx;
 
 konghouhandsCutsDiv.addEventListener('touchstart', function(e) {
-    console.log("手指11")
-        // 获取手指初始坐标 
+    // 获取手指初始坐标 
     startXX = e.targetTouches[0].pageX;
     xx = this.offsetRight;
 
@@ -78,6 +80,9 @@ konghouhandsCutsDiv.addEventListener('touchend', function(e) {
 textjikangimg.addEventListener('touchstart', function(e) {
     const btn = document.getElementById('jikangimgtongpan');
     btn.style.opacity = 1;
+    konghouhandsDiv.style.display = 'block';
+    konghouhandsCutsDiv.style.display = 'block';
+    konghouhandsbodongDiv.style.display = 'block';
     e.preventDefault();
 })
 
@@ -100,6 +105,9 @@ textruanjiimg.addEventListener('touchend', function(e) {
     })
     // 伯牙铜盘
 textboyaimg.addEventListener('touchstart', function(e) {
+    konghouhandsDiv.style.display = 'block';
+    konghouhandsCutsDiv.style.display = 'block';
+    konghouhandsbodongDiv.style.display = 'block';
     const btn = document.getElementById('boyaimgtongpan');
     btn.style.opacity = 1;
     e.preventDefault();
@@ -113,6 +121,9 @@ textboyaimg.addEventListener('touchend', function(e) {
 
 // 孔子铜盘
 textkongziimg.addEventListener('touchstart', function(e) {
+    konghouhandsDiv.style.display = 'block';
+    konghouhandsCutsDiv.style.display = 'block';
+    konghouhandsbodongDiv.style.display = 'block';
     const btn = document.getElementById('kongziimgtongpan');
     btn.style.opacity = 1;
     e.preventDefault();
@@ -126,6 +137,9 @@ textkongziimg.addEventListener('touchend', function(e) {
 
 // 蔡邕铜盘
 textcaiyongimg.addEventListener('touchstart', function(e) {
+    konghouhandsDiv.style.display = 'block';
+    konghouhandsCutsDiv.style.display = 'block';
+    konghouhandsbodongDiv.style.display = 'block';
     const btn = document.getElementById('caiyongimgtongpan');
     btn.style.opacity = 1;
     e.preventDefault();
@@ -139,6 +153,9 @@ textcaiyongimg.addEventListener('touchend', function(e) {
 
 // 董廷兰铜盘
 textdongtinglanimg.addEventListener('touchstart', function(e) {
+    konghouhandsDiv.style.display = 'block';
+    konghouhandsCutsDiv.style.display = 'block';
+    konghouhandsbodongDiv.style.display = 'block';
     const btn = document.getElementById('dongtinglanimgtongpan');
     btn.style.opacity = 1;
     e.preventDefault();
@@ -152,6 +169,9 @@ textdongtinglanimg.addEventListener('touchend', function(e) {
 
 // 郭楚忘铜盘
 textguochuwangimg.addEventListener('touchstart', function(e) {
+    konghouhandsDiv.style.display = 'block';
+    konghouhandsCutsDiv.style.display = 'block';
+    konghouhandsbodongDiv.style.display = 'block';
     const btn = document.getElementById('guochuwangimgtongpan');
     btn.style.opacity = 1;
     e.preventDefault();
@@ -165,6 +185,9 @@ textguochuwangimg.addEventListener('touchend', function(e) {
 
 // 师旷铜盘
 textshikuangimg.addEventListener('touchstart', function(e) {
+    konghouhandsDiv.style.display = 'block';
+    konghouhandsCutsDiv.style.display = 'block';
+    konghouhandsbodongDiv.style.display = 'block';
     const btn = document.getElementById('shikuangimgtongpan');
     btn.style.opacity = 1;
     e.preventDefault();

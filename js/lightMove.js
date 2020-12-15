@@ -112,11 +112,15 @@ function TwoAnimationPic() {
         }, i * 1500);
     }
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 2; i++) {
         setTimeout(() => {
             starGroup[i].style.display = 'none';
         }, 8000 + i * 1500);
     }
+
+    setTimeout(() => {
+        starGroup[2].style.display = 'none';
+    }, 6000 + 2 * 1500);
 
     setTimeout(() => {
         secondGroup.style.opacity = 1;

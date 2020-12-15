@@ -60,7 +60,7 @@
     display: none;
     pointer-events: none;
     transform: scale(1.5);
-    animation: bottom-top-text-musician 8s;
+    animation: bottom-top-text-musician 6s;
     animation-iteration-count: 1;
 }
 
@@ -212,6 +212,7 @@
     left: 27%;
     width: 15%;
     height: 23%;
+    display: none;
 }
 
 @keyframes konghouhands-group {
@@ -232,6 +233,7 @@
     box-shadow: none !important;
     width: auto;
     z-index: 999;
+    display: none;
     animation: konghouhands-group 3s infinite normal;
 }
 
@@ -242,6 +244,7 @@
     height: 8%;
     box-shadow: none !important;
     width: auto;
+    display: none;
     z-index: 800;
 }
 

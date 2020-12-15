@@ -29,7 +29,7 @@
     top: calc(50% - 45px);
     width: fit-content;
     z-index: 999;
-    animation: trans-rabbit 8s linear infinite normal;
+    /* animation: trans-rabbit 8s linear infinite normal; */
 }
 
 .loading-moon {

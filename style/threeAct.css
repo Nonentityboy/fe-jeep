@@ -33,16 +33,16 @@
     height: 22%;
     left: 45%;
     z-index: 10;
-    bottom: 34%;
+    bottom: 39%;
 }
 
 .sheng {
     position: absolute;
     width: 26%;
     height: 13%;
-    left: 64%;
+    left: 72%;
     z-index: 10;
-    bottom: 45%;
+    bottom: 43%;
 }
 
 .xun {
@@ -51,7 +51,7 @@
     /* height: 6.06%; */
     left: 85%;
     z-index: 10;
-    bottom: 60%;
+    bottom: 59%;
 }
 
 .bianzhong {
