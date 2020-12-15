@@ -1,9 +1,5 @@
 .threeHalfGroup {
-    /* display: none; */
-}
-
-.threeHalfGroup {
-    /* position: relative; */
+    display: none;
 }
 
 .threeHalfGroup .zhongguo {
@@ -12,6 +8,8 @@
     height: 133.48px;
     top: 876px;
     left: 186px;
+    opacity: 0;
+    z-index: 100;
 }
 
 .threeHalfGroup .yanhuang {
@@ -20,6 +18,7 @@
     height: 5.15%;
     top: 20.67%;
     left: 27.45%;
+    opacity: 0;
 }
 
 .huaxia {
@@ -28,6 +27,7 @@
     height: 8.09%;
     top: 25.83%;
     left: 27.27%;
+    opacity: 0;
 }
 
 .daidai {
@@ -36,6 +36,7 @@
     height: 5.51%;
     top: 33.64%;
     left: 27.58%;
+    opacity: 0;
 }
 
 .shiwomen {
@@ -44,15 +45,19 @@
     height: 6.03%;
     top: 40.53%;
     left: 27.48%;
+    opacity: 0;
 }
 
 .rangyinyue {
     position: absolute;
     width: 80.96%;
-    height: 13.67%;
-    top: 74.05%;
+    /* height: 13.67%; */
+    top: 76.05%;
     left: 10.01%;
+    z-index: 100;
+    opacity: 0;
 }
+
 .logo {
     position: absolute;
     width: 93.01%;

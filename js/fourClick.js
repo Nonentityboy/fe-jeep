@@ -4,6 +4,7 @@ const threeGroupInfoDiv = document.getElementById('threeGroup');
 
 const fourGroupButtonDiv = document.getElementById('fourGroupButton');
 
+const threeHalfGroup = document.getElementById('threeHalfGroup')
 
 headerBottomHandsDiv.addEventListener('touchend', function(e) {
 
@@ -30,19 +31,48 @@ headerBottomHandsDiv.addEventListener('touchend', function(e) {
 
     setTimeout(() => {
         threeGroupInfoDiv.style.display = "none";
-        toolDiv.style.background = "url('https://s3.ax1x.com/2020/12/15/ruO0G6.png') no-repeat #efeff4";
-        toolDiv.style.backgroundSize = "cover";
-        toolDiv.style.backgroundPosition = "center center"
-        toolDiv.style.display = "block"
-        toolDiv.style.width = "100%";
-        toolDiv.style.height = "100%";
+
+        toolDiv.style.backgroundImage = "linear-gradient( #171c61，#172374)";
+        threeHalfGroup.style.display = "block";
+
+
+        const pageText = [
+            document.getElementById('threeHalfGroup1'),
+            document.getElementById('threeHalfGroup2'),
+            document.getElementById('threeHalfGroup3'),
+            document.getElementById('threeHalfGroup4'),
+            document.getElementById('threeHalfGroup5'),
+            document.getElementById('threeHalfGroup6')
+        ];
+
+        for (let i = 0; i < 6; i++) {
+            setTimeout(() => {
+                pageText[i].style.opacity = 1;
+                pageText[i].style.transition = "ease 5s";
+            }, i * 1500);
+        }
+
+        setTimeout(() => {
+            window.location.href = 'juankuan.html';
+        }, 14000);
+        // toolDiv.style.background = "url('https://s3.ax1x.com/2020/12/15/ruO0G6.png') no-repeat #efeff4";
+        // toolDiv.style.backgroundSize = "cover";
+        // toolDiv.style.backgroundPosition = "center center"
+        // toolDiv.style.display = "block"
+        // toolDiv.style.width = "100%";
+        // toolDiv.style.height = "100%";
         e.preventDefault();
     }, 4000);
     // 
 
-    setTimeout(() => {
-        window.location.href = 'juankuan.html';
-    }, 9000);
+    // setTimeout(() => {
+    //     window.location.href = 'juankuan.html';
+    // }, 9000);
+
+
+
+
+
     // setTimeout(() => {
     //     // 第三幕转第3.5幕的逻辑
     //     toolDiv.style.background = "url('https://s3.ax1x.com/2020/12/13/rZWKYt.png') no-repeat #efeff4";
