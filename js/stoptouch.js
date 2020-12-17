@@ -127,3 +127,32 @@ threeHalfGroup6.addEventListener('touchend', function(e) {
 threeHalfGroup6.addEventListener('touchmove', function(e) {
     e.preventDefault();
 });
+
+const beijixingStopTouch = document.getElementById('eader-bottom-text-group-three');
+
+beijixingStopTouch.addEventListener('touchstart', function(e) {
+    e.preventDefault();
+});
+
+beijixingStopTouch.addEventListener('touchend', function(e) {
+    e.preventDefault();
+});
+
+beijixingStopTouch.addEventListener('touchmove', function(e) {
+    e.preventDefault();
+});
+
+const yueqiqqqqqq = document.getElementById('eader-bottom-text-group-three');
+
+
+yueqiqqqqqq.addEventListener('touchstart', function(e) {
+    e.preventDefault();
+});
+
+yueqiqqqqqq.addEventListener('touchend', function(e) {
+    e.preventDefault();
+});
+
+yueqiqqqqqq.addEventListener('touchmove', function(e) {
+    e.preventDefault();
+});

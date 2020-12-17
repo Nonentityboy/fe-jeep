@@ -32,6 +32,7 @@ headerBottomHandsDiv.addEventListener('touchend', function(e) {
     for (let i = 0; i < 7; i++) {
         xingxing[i].style.opacity = 1;
     }
+    threeGroupInfoDiv.style.display = "none";
 
     // setTimeout(() => {
     //     for (let i = 0; i < 7; i++) {
@@ -41,7 +42,6 @@ headerBottomHandsDiv.addEventListener('touchend', function(e) {
     // }, 3000);
 
     setTimeout(() => {
-        threeGroupInfoDiv.style.display = "none";
 
         toolDiv.style.backgroundImage = "linear-gradient( #171c61，#172374)";
         threeHalfGroup.style.display = "block";
@@ -63,9 +63,9 @@ headerBottomHandsDiv.addEventListener('touchend', function(e) {
             }, i * 500);
         }
 
-        // setTimeout(() => {
-        //     window.location.href = 'juankuan.html';
-        // }, 6000);
+        setTimeout(() => {
+            window.location.href = 'juankuan_new.html';
+        }, 6000);
         // toolDiv.style.background = "url('https://s3.ax1x.com/2020/12/15/ruO0G6.png') no-repeat #efeff4";
         // toolDiv.style.backgroundSize = "cover";
         // toolDiv.style.backgroundPosition = "center center"
