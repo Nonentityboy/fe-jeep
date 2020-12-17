@@ -4,7 +4,8 @@ const threeGroupInfoDiv = document.getElementById('threeGroup');
 
 const fourGroupButtonDiv = document.getElementById('fourGroupButton');
 
-const threeHalfGroup = document.getElementById('threeHalfGroup')
+
+
 
 
 headerBottomHandsDiv.addEventListener('touchstart', function(e) {
@@ -32,7 +33,8 @@ headerBottomHandsDiv.addEventListener('touchend', function(e) {
     for (let i = 0; i < 7; i++) {
         xingxing[i].style.opacity = 1;
     }
-    threeGroupInfoDiv.style.display = "none";
+    threeGroupInfoDiv.style.opacity = 0;
+    threeGroupInfoDiv.style.transition = 'ease 3s';
 
     // setTimeout(() => {
     //     for (let i = 0; i < 7; i++) {
@@ -42,9 +44,15 @@ headerBottomHandsDiv.addEventListener('touchend', function(e) {
     // }, 3000);
 
     setTimeout(() => {
+        threeGroupInfoDiv.style.display = "none";
 
         toolDiv.style.backgroundImage = "linear-gradient( #171c61，#172374)";
+
         threeHalfGroup.style.display = "block";
+        threeHalfGroup.style.opacity = 1;
+        threeHalfGroup.style.transition = 'ease 2s';
+
+
 
 
         const pageText = [
