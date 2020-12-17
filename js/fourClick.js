@@ -6,6 +6,17 @@ const fourGroupButtonDiv = document.getElementById('fourGroupButton');
 
 const threeHalfGroup = document.getElementById('threeHalfGroup')
 
+
+headerBottomHandsDiv.addEventListener('touchstart', function(e) {
+    // 阻止屏幕滚动的默认行为 
+    e.preventDefault();
+});
+
+headerBottomHandsDiv.addEventListener('touchmove', function(e) {
+    // 阻止屏幕滚动的默认行为 
+    e.preventDefault();
+});
+
 headerBottomHandsDiv.addEventListener('touchend', function(e) {
 
     const xingxing = [
@@ -22,12 +33,12 @@ headerBottomHandsDiv.addEventListener('touchend', function(e) {
         xingxing[i].style.opacity = 1;
     }
 
-    setTimeout(() => {
-        for (let i = 0; i < 7; i++) {
-            xingxing[i].style.opacity = 0;
-            xingxing[i].style.transition = 'ease 1s';
-        }
-    }, 3000);
+    // setTimeout(() => {
+    //     for (let i = 0; i < 7; i++) {
+    //         xingxing[i].style.opacity = 0;
+    //         xingxing[i].style.transition = 'ease 1s';
+    //     }
+    // }, 3000);
 
     setTimeout(() => {
         threeGroupInfoDiv.style.display = "none";
@@ -49,12 +60,12 @@ headerBottomHandsDiv.addEventListener('touchend', function(e) {
             setTimeout(() => {
                 pageText[i].style.opacity = 1;
                 pageText[i].style.transition = "ease 5s";
-            }, i * 1500);
+            }, i * 500);
         }
 
-        setTimeout(() => {
-            window.location.href = 'juankuan.html';
-        }, 14000);
+        // setTimeout(() => {
+        //     window.location.href = 'juankuan.html';
+        // }, 6000);
         // toolDiv.style.background = "url('https://s3.ax1x.com/2020/12/15/ruO0G6.png') no-repeat #efeff4";
         // toolDiv.style.backgroundSize = "cover";
         // toolDiv.style.backgroundPosition = "center center"
@@ -62,7 +73,7 @@ headerBottomHandsDiv.addEventListener('touchend', function(e) {
         // toolDiv.style.width = "100%";
         // toolDiv.style.height = "100%";
         e.preventDefault();
-    }, 4000);
+    }, 3000);
     // 
 
     // setTimeout(() => {
@@ -83,7 +94,9 @@ headerBottomHandsDiv.addEventListener('touchend', function(e) {
     //     toolDiv.style.width = "100%";
     //     toolDiv.style.height = "7260px";
     //     e.preventDefault();
+
     // }, 10000);
+    e.preventDefault();
 })
 
 // 第三幕转第四幕的逻辑

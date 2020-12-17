@@ -28,6 +28,7 @@ div.addEventListener('touchstart', function(e) {
     y = this.offsetTop;
     this.style.boxShadow = '0 0 15px rgba(0, 0, 0, .6)';
     this.style.transition = "none";
+    e.preventDefault();
 });
 // 手指离开 
 div.addEventListener('touchend', function(e) {
@@ -68,6 +69,7 @@ div.addEventListener('touchend', function(e) {
         hands.style.transition = "ease 2s";
     }
     moonDiv.style.boxShadow = '';
+    e.preventDefault();
 });
 // 手指按住移动 
 div.addEventListener('touchmove', function(e) {

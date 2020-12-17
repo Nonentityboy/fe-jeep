@@ -1,6 +1,9 @@
 window.addEventListener("load", function(event) {
     console.log("文档以及它包含的资源都已加载完成");
+});
 
+// 设置三秒之后首屏加载
+setTimeout(() => {
     const zeroGroup = document.getElementById('zeroGroup');
     zeroGroup.style.display = 'none';
 
@@ -19,12 +22,7 @@ window.addEventListener("load", function(event) {
             pageText[i].style.transition = "ease 10s";
         }, i * 1000);
     }
-});
-
-// 设置三秒之后首屏加载
-setTimeout(() => {
-
-}, 3000);
+}, 5000);
 
 
 // 缩放

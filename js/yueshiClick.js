@@ -15,7 +15,7 @@ const textshikuangimg = document.getElementById('shikuangimg');
 const threeGroupDiv = document.getElementById('threeGroup');
 const secondGroupDiv = document.getElementById('secondGroup');
 
-const maxRightKongHou = konghouhandsCutsDiv.offsetRight - body.offsetRight;
+// const maxRightKongHou = konghouhandsCutsDiv.offsetRight - body.offsetRight;
 
 
 const konghouUnLight = document.getElementById('konghouUnLight');

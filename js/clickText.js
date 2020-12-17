@@ -15,6 +15,8 @@ const sheng = document.getElementById('sheng');
 const xun = document.getElementById('xun');
 const bianzhong = document.getElementById('bianzhong');
 
+const cut_hands_move = document.getElementById('cut_hands_move');
+
 // 获取乐器页面头
 const threeGroupTopDiv = document.getElementById('threeGroupTop')
 
@@ -35,6 +37,7 @@ shenren.addEventListener('touchstart', function(e) {
 
 shenren.addEventListener('touchend', function(e) {
     kmLightDiv.style.opacity = 1;
+    cut_hands_move.style.display = 'block';
     kmLightDiv.style.transition = "ease 2s";
     const btn = document.getElementById('shenrenClick');
     shenren.style.opacity = 1;
@@ -60,6 +63,7 @@ zhuangtai.addEventListener('touchstart', function(e) {
 
 zhuangtai.addEventListener('touchend', function(e) {
     kmLightDiv.style.opacity = 1;
+    cut_hands_move.style.display = 'block';
     kmLightDiv.style.transition = "ease 2s";
     const btn = document.getElementById('zhuangtaiClick');
     zhuangtai.style.opacity = 1;
@@ -85,6 +89,7 @@ meihua.addEventListener('touchstart', function(e) {
 
 meihua.addEventListener('touchend', function(e) {
     kmLightDiv.style.opacity = 1;
+    cut_hands_move.style.display = 'block';
     kmLightDiv.style.transition = "ease 2s";
     const btn = document.getElementById('meihuaClick');
     meihua.style.opacity = 1;
@@ -109,6 +114,7 @@ guangling.addEventListener('touchstart', function(e) {
 
 guangling.addEventListener('touchend', function(e) {
     kmLightDiv.style.opacity = 1;
+    cut_hands_move.style.display = 'block';
     kmLightDiv.style.transition = "ease 2s";
     const btn = document.getElementById('guanglingClick');
     guangling.style.opacity = 1;
@@ -134,6 +140,7 @@ nichang.addEventListener('touchstart', function(e) {
 
 nichang.addEventListener('touchend', function(e) {
     kmLightDiv.style.opacity = 1;
+    cut_hands_move.style.display = 'block';
     kmLightDiv.style.transition = "ease 2s";
     const btn = document.getElementById('nichangClick');
     nichang.style.opacity = 1;
@@ -159,6 +166,7 @@ yueer.addEventListener('touchstart', function(e) {
 
 yueer.addEventListener('touchend', function(e) {
     kmLightDiv.style.opacity = 1;
+    cut_hands_move.style.display = 'block';
     kmLightDiv.style.transition = "ease 2s";
     const btn = document.getElementById('yueerClick');
     yueer.style.opacity = 1;
@@ -184,6 +192,7 @@ xiaoxiang.addEventListener('touchstart', function(e) {
 
 xiaoxiang.addEventListener('touchend', function(e) {
     kmLightDiv.style.opacity = 1;
+    cut_hands_move.style.display = 'block';
     kmLightDiv.style.transition = "ease 2s";
     const btn = document.getElementById('xiaoxiangClick');
     xiaoxiang.style.opacity = 1;
@@ -206,6 +215,7 @@ xiao.addEventListener('touchstart', function(e) {
 })
 xiao.addEventListener('touchend', function(e) {
         kmLightDiv.style.opacity = 1;
+        cut_hands_move.style.display = 'block';
         kmLightDiv.style.transition = "ease 2s";
         const audio = document.getElementById('xiaomp3');
         audio.pause();
@@ -221,6 +231,7 @@ ruan.addEventListener('touchstart', function(e) {
 })
 ruan.addEventListener('touchend', function(e) {
         kmLightDiv.style.opacity = 1;
+        cut_hands_move.style.display = 'block';
         kmLightDiv.style.transition = "ease 2s";
         const audio = document.getElementById('ruanmp3');
         audio.pause();
@@ -236,6 +247,7 @@ guqin.addEventListener('touchstart', function(e) {
 })
 guqin.addEventListener('touchend', function(e) {
         kmLightDiv.style.opacity = 1;
+        cut_hands_move.style.display = 'block';
         kmLightDiv.style.transition = "ease 2s";
         const audio = document.getElementById('guqinmp3');
         audio.pause();
@@ -251,6 +263,7 @@ konghou.addEventListener('touchstart', function(e) {
 })
 konghou.addEventListener('touchend', function(e) {
         kmLightDiv.style.opacity = 1;
+        cut_hands_move.style.display = 'block';
         kmLightDiv.style.transition = "ease 2s";
         const audio = document.getElementById('konghoump3');
         audio.pause();
@@ -266,6 +279,7 @@ sheng.addEventListener('touchstart', function(e) {
 })
 sheng.addEventListener('touchend', function(e) {
         kmLightDiv.style.opacity = 1;
+        cut_hands_move.style.display = 'block';
         kmLightDiv.style.transition = "ease 2s";
         const audio = document.getElementById('shengmp3');
         audio.pause();
@@ -281,6 +295,7 @@ xun.addEventListener('touchstart', function(e) {
 })
 xun.addEventListener('touchend', function(e) {
         kmLightDiv.style.opacity = 1;
+        cut_hands_move.style.display = 'block';
         kmLightDiv.style.transition = "ease 2s";
         const audio = document.getElementById('xunmp3');
         audio.pause();
@@ -296,6 +311,7 @@ bianzhong.addEventListener('touchstart', function(e) {
 })
 bianzhong.addEventListener('touchend', function(e) {
     kmLightDiv.style.opacity = 1;
+    cut_hands_move.style.display = 'block';
     kmLightDiv.style.transition = "ease 2s";
     const audio = document.getElementById('bianzhongmp3');
     audio.pause();

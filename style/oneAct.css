@@ -211,7 +211,7 @@ z-index: 15;
 }
 
 .music-text-detail .box_music .guangling {
-    left: 53%;
+    left: 42%;
     top: 17%;
 }
 
@@ -397,17 +397,18 @@ z-index: 15;
     box-shadow: none !important;
     position: absolute;
     right: 6%;
-    bottom: 27%;
-    height: 8%;
+    bottom: 19%;
+    height: 18%;
     width: auto;
-    z-index: 10;
 }
 
 .cut_hands_move {
+    box-shadow: none !important;
     position: absolute;
+    display: none;
     right: 6%;
-    bottom: 27%;
-    height: 8%;
+    bottom: 19%;
+    height: 18%;
     width: auto;
     animation: hands-cut-hands-one-group 3s infinite normal;
     z-index: 6;

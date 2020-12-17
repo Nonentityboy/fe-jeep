@@ -15,6 +15,7 @@ const fixStarDiv = document.getElementById("fixStar");
 const toolDiv = document.getElementById("tool");
 
 const starfieldDiv = document.getElementById('starfield');
+const threeGroupDiv = document.getElementById('threeGroup');
 
 const framePaopaoDiv = document.getElementById('frame-paopao');
 // const wholemusician = document.getElementById("wholemusician");
@@ -53,7 +54,7 @@ cutHandsDiv.addEventListener('touchmove', function(e) {
 
     //防止超出父元素范围
     if (lastLeft < 0) lastLeft = 0;
-    if (lastLeft > maxLeft - 200) lastLeft = maxLeft - 200;
+    if (lastLeft > maxLeft - 200) lastLeft = maxLeft - 400;
 
     // 移动盒子 盒子原来的位置 + 手指移动的距离 
     this.style.left = lastLeft + 'px';
@@ -65,6 +66,7 @@ cutHandsDiv.addEventListener('touchend', function() {
     console.log("手指离开！")
     lightline.style.display = 'none';
     lightlinenone.style.display = 'block';
+    threeGroupDiv.style.display = "block";
     setTimeout(() => {
         container.style.display = "none";
         music_text.style.display = "none";
@@ -81,14 +83,16 @@ cutHandsDiv.addEventListener('touchend', function() {
         toolDiv.style.height = "100%";
 
 
-        starfieldDiv.style.display = "block";
-        framePaopaoDiv.style.display = 'block';
+        threeGroupDiv.style.opacity = 1;
+        threeGroupDiv.style.transition = 'ease 6s';
+        // starfieldDiv.style.display = "block";
+        // framePaopaoDiv.style.display = 'block';
     }, 1000);
     setTimeout(() => {
         montainDiv.style.opacity = 0;
         montainDiv.style.transition = "ease 2s";
         // 第二幕动效效果图
-        TwoAnimationPic();
+        // TwoAnimationPic();
 
     }, 800);
 
