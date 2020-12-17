@@ -410,6 +410,7 @@ z-index: 15;
     bottom: 19%;
     height: 18%;
     width: auto;
+    pointer-events: none;
     animation: hands-cut-hands-one-group 3s infinite normal;
     z-index: 6;
 }
