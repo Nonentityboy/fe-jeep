@@ -8,6 +8,8 @@ var startY = 0;
 var y = 0;
 var tint;
 let lastTop;
+const kmLightDiv = document.getElementById('km-light');
+
 
 
 const headerTextDiv = document.getElementById('header-bottom-text-change');
@@ -35,6 +37,7 @@ div.addEventListener('touchend', function(e) {
     // 获取月亮的id
     const body = document.querySelector('body');
     const moonDiv = document.getElementById('footer-bottom-middle');
+    const cutDhandsDivDiv = document.getElementById('cut-hands');
 
     const maxTop = body.offsetHeight - moonDiv.offsetHeight;
     console.log(maxTop, lastTop)
@@ -66,6 +69,7 @@ div.addEventListener('touchend', function(e) {
         middleTextDiv.style.transition = "ease 2s";
         handsAnimation.style.display = "none";
         hands.style.display = 'none';
+        cutDhandsDivDiv.style.display = 'block';
         hands.style.transition = "ease 2s";
     }
     moonDiv.style.boxShadow = '';
@@ -99,7 +103,6 @@ div.addEventListener('touchmove', function(e) {
 
 function moveStartGroup() {
     // 获取孔明灯和孔明灯手势
-    const kmLightDiv = document.getElementById('km-light');
     const headerTextGroupTwoDiv = document.getElementById('header-bottom-text-group-two');
     const headerTextDiv = document.getElementById('header-bottom-text-change');
     const musicTestDetailDiv = document.getElementById('music-text-detail');

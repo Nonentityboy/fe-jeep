@@ -195,13 +195,13 @@ z-index: 15;
 
 .music-text-detail .box_music .size {
     width: 35%;
-    height: auto;
+    height: 19%;
     position: absolute;
 }
 
 .music-text-detail .box_music .size_big {
     width: 40%;
-    height: auto;
+    height: 19%;
     position: absolute;
 }
 
@@ -222,7 +222,7 @@ z-index: 15;
 
 .music-text-detail .box_music .shenren {
     height: 20%;
-    width: auto;
+    width: 34%;
     left: 30%;
     top: 37%;
 }
@@ -237,14 +237,14 @@ z-index: 15;
     left: 50px;
     top: 950px;
     height: 350px;
-    width: auto;
+    width: 316px;
 }
 
 .music-text-detail .box_music .xiaoxiang {
     left: 36%;
     top: 56%;
     height: 24%;
-    width: auto;
+    width: 30%;
 }
 
 .hands {
@@ -365,21 +365,21 @@ z-index: 15;
 
 .km-light .line {
     position: absolute;
-    right: 164px;
-    bottom: 520px;
+    right: 11%;
+    bottom: 25%;
+    pointer-events: none;
     z-index: 10;
-    width: 12%;
+    width: 23%;
     height: auto;
 }
 
 .footer .km-light .noneline {
     display: inline-block;
     position: absolute;
-    right: 164px;
-    /* 待修改 */
-    bottom: 723px;
+    right: 12%;
+    bottom: 33%;
     z-index: 10;
-    width: 12%;
+    width: 22%;
     height: auto;
     animation: myfirst 5s;
     animation-timing-function: ease 3s;
@@ -388,17 +388,19 @@ z-index: 15;
 
 .noneline-descript {
     position: absolute;
-    right: 3%;
-    bottom: 35%;
-    width: 35.1%;
+    right: 7%;
+    bottom: 32%;
+    width: 30.1%;
 }
 
 .km-light .cut_hands {
     box-shadow: none !important;
     position: absolute;
     right: 6%;
-    bottom: 19%;
+    bottom: 18%;
     height: 18%;
+    z-index: 1000;
+    display: none;
     width: auto;
 }
 
@@ -407,8 +409,9 @@ z-index: 15;
     position: absolute;
     display: none;
     right: 6%;
-    bottom: 19%;
+    bottom: 18%;
     height: 18%;
+    z-index: 1000;
     width: auto;
     pointer-events: none;
     animation: hands-cut-hands-one-group 3s infinite normal;
@@ -431,11 +434,11 @@ z-index: 15;
 
 @keyframes myfirst {
     0% {
-        right: 164px;
-        bottom: 723px;
+        right: 12%;
+        bottom: 33%;
     }
     98% {
-        right: 164px;
+        right: 12%;
         bottom: 1523px;
     }
     100% {
@@ -454,21 +457,4 @@ z-index: 15;
 .footer .box_music .btn {
     z-index: -1;
     opacity: 0;
-}
-
-
-/* 禁止长按图片保存 */
-
-* {
-    -webkit-touch-callout: none;
-    /* iOS Safari */
-    -webkit-user-select: none;
-    /* Chrome/Safari/Opera */
-    -khtml-user-select: none;
-    /* Konqueror */
-    -moz-user-select: none;
-    /* Firefox */
-    -ms-user-select: none;
-    /* Internet Explorer/Edge */
-    user-select: none;
 }

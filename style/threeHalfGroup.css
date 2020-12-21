@@ -3,7 +3,11 @@
     opacity: 0;
 }
 
-.threeHalfGroup .zhongguo {
+.threeHalfGroup {
+    background-image: linear-gradient( #1c2a54, #172b73, #0068ab);
+}
+
+.zhongguo {
     position: absolute;
     width: 634.52px;
     height: auto;

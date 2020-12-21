@@ -22,7 +22,7 @@ setTimeout(() => {
             pageText[i].style.transition = "ease 10s";
         }, i * 1000);
     }
-}, 5000);
+}, 3000);
 
 
 // 缩放
