@@ -5,4 +5,6 @@
 
 预览链接： https://gongyi3act.tencent-cloud.net/tradition20/
 
+(选择H5调试模式打开)
 
+![](https://raw.githubusercontent.com/Nonentityboy/PicGoToGitHub/study_note_blog/20220517011830.png)
